@@ -11,7 +11,7 @@ const Residencies = () => {
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
           <span className="orangeText">Nuestros </span>
-          <span className="primaryText">Proyectos</span>
+          <span className="primaryText">Proyectos.</span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />
