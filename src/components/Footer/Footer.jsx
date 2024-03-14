@@ -9,12 +9,12 @@ const Footer = () => {
         
 
         <div className="flexColStart f-right">
-          <span className="primaryText">Information</span>
+          <span className="primaryText">siguenos en </span>
           <div className="flexCenter f-menu">
-            <span>Property</span>
-            <span>Services</span>
-            <span>Product</span>
-            <span>About Us</span>
+            <span>Facebook</span>
+            <span>Tik Tok</span>
+            <span>Instagram</span>
+            <span>Twitter</span>
           </div>
         </div>
       </div>

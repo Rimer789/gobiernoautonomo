@@ -17,7 +17,7 @@ const Header = () => {
           <a href="#contact-us">Servicios</a>
           <a href="#get-started">Concejo</a>
           <button className="button">
-            <a href="mailto:zainkeepscode@gmail.com">Contact</a>
+            Contactos
           </button>
         </div>
 
