@@ -1,6 +1,4 @@
 import "./Hero.css";
-import { HiLocationMarker } from "react-icons/hi";
-import CountUp from "react-countup";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -47,7 +45,7 @@ const Hero = () => {
             }}
             className="image-container"
           >
-            <img src="./plaza.jpg" alt="houses" />
+            <img src="./portada5.jpg" alt="houses" />
           </motion.div>
         </div>
       </div>
