@@ -1,18 +1,49 @@
 .h-wrapper {
-  z-index: 99;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #beb2b200;
+  z-index: 1000;
 }
+.h-menu a {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: bold; /* Hacer que el texto sea negrita */
+  font-size: 1.1em; /* Ajustar el tamaño del texto según sea necesario */
+}
+
+
 
 .h-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--secondary);
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .h-menu {
-  gap: 2rem;
+  display: flex;
+  justify-content: flex-end; /* Alinear elementos del menú a la derecha en PC */
+  align-items: flex-end; /* Alinear elementos del menú a la derecha en PC */
+}
+
+.h-menu a {
+  margin-left: 20px; /* Añadir espaciado entre elementos del menú en PC */
+  margin-bottom: 10px; /* Añadir espaciado entre elementos del menú en móvil */
+  width: calc(25% - 20px); /* Establece el ancho al 100% para que todas las secciones tengan el mismo ancho */
+  background-color: #ccc;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  text-align: center; /* Centra el texto dentro de las secciones */
+}
+
+.h-menu > *:last-child {
+  margin-left: 0; /* Eliminar el margen del último elemento del menú en PC */
 }
 
 .h-menu > *:hover {
@@ -24,29 +55,49 @@
 }
 
 @media (max-width: 768px) {
+  .h-menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .h-menu.open a {
+    width: 100%; /* Establece el ancho al 100% para que todas las secciones tengan el mismo ancho */
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: center; /* Centra el texto dentro de las secciones */
+  }
   .menu-icon {
     display: block;
     cursor: pointer;
+    position: fixed; /* Mantener el icono del menú en su posición */
+    top: -5px; /* Ajustar la posición según sea necesario */
+    left: -5px; /* Ajustar la posición según sea necesario */
+    z-index: 1001; /* Asegurar que el icono del menú esté sobre el menú */
+    padding: 10px; /* Añadir relleno al icono del menú */
+    color: rgb(0, 0, 0);
   }
 
   .h-menu {
-    display: none;
-    color: var(--black);
-    position: absolute;
-    gap: 2rem;
-    font-weight: 500;
-    flex-direction: column;
-    right: 4rem;
-    top: 3rem;
-    background: white;
-    border-radius: 10px;
-    transition: all 200ms ease;
-    align-items: flex-start;
-    padding: 3rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column; /* Mostrar elementos del menú en una columna en vista móvil */
+    background-color: #f3eeee00; /* Fondo blanco para el menú */
+    padding: 20px; /* Añadir relleno al menú */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
   }
-
+  
+  .mobile-menu-icon {
+    position: absolute;
+    top: 20px; /* Ajustar la posición según sea necesario */
+    left: 20px; /* Ajustar la posición según sea necesario */
+    cursor: pointer;
+  }
+  
   .h-menu.open {
     display: flex;
   }
 }
+

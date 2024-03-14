@@ -5,31 +5,40 @@ import { BiMenuAltRight } from "react-icons/bi";
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
+  const toggleMenu = () => {
+    setMenuOpened((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setMenuOpened(false);
+  };
+
   return (
-    <section className="h-wrapper">
-      <div className="flexCenter innerWidth paddings h-container">
-        <br   width={100} />
+    <header className={`h-wrapper ${menuOpened ? "menu-open" : ""}`}>
 
         {/* menu */}
-        <div className={`flexCenter h-menu ${menuOpened ? 'open' : ''}`}>
-          <a href="#value">Informacion </a>
-          <a href="#residencies">Proyectos</a>
-          <a href="#contact-us">Servicios</a>
-          <a href="#get-started">Concejo</a>
-          <button className="button">
-            Contactos
-          </button>
-        </div>
-
-        {/* for medium and small screens */}
-        <div
-          className="menu-icon"
-          onClick={() => setMenuOpened((prev) => !prev)}
-        >
+        <nav className={`h-menu ${menuOpened ? "open" : ""}`}>
+          <a href="#hero" onClick={closeMenu}>
+            Inicio
+          </a>
+          <a href="#value" onClick={closeMenu}>
+            Informacion{" "}
+          </a>
+          <a href="#residencies" onClick={closeMenu}>
+            Proyectos
+          </a>
+          <a href="#contact-us" onClick={closeMenu}>
+            Servicios
+          </a>
+          <a href="#get-started" onClick={closeMenu}>
+            Ferias  
+          </a>
+        </nav>
+        {/* Icono del menú */}
+        <div className="menu-icon" onClick={toggleMenu}>
           <BiMenuAltRight size={30} />
-        </div>
       </div>
-    </section>
+    </header>
   );
 };
 
