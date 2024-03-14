@@ -8,8 +8,7 @@ const Header = () => {
   return (
     <section className="h-wrapper">
       <div className="flexCenter innerWidth paddings h-container">
-        {/* logo */}
-        <img src="./logo.png" alt="logo" width={100} />
+        <br   width={100} />
 
         {/* menu */}
         <div className={`flexCenter h-menu ${menuOpened ? 'open' : ''}`}>
