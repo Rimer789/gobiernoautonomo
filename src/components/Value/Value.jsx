@@ -13,7 +13,7 @@ import "./Value.css";
 
 const Value = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ["./escudo.png", "./plaza.jpg", "./R1.png"];
+  const images = ["./escudo.png", "./plaza.jpg", "./r1.png"];
 
   useEffect(() => {
     const interval = setInterval(() => {
