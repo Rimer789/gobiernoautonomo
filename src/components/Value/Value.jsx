@@ -1,42 +1,66 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Accordion,
   AccordionItem,
   AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
-  AccordionItemState,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
-import {
-  MdOutlineArrowDropDown,
-  MdOutlineArrowDropDownCircle,
-} from "react-icons/md";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 import data from "../../utils/accordion.jsx";
 import "./Value.css";
 
 const Value = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = ["./escudo.png", "./plaza.jpg", "./R1.png"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <section id="value" className="v-wrapper">
+    <section id="value" className="v-wrappera">
       <div className="paddings innerWidth flexCenter v-container">
-        {/* left side */}
         <div className="v-left">
           <div className="image-container">
-            <img src="./value.png" alt="" />
+            <img src={images[currentImageIndex]} alt="" />
           </div>
         </div>
 
-        {/* right */}
         <div className="flexColStart v-right">
-          <span className="orangeText">Municipio de</span>
-
-          <span className="primaryText">Punata</span>
+     
 
           <span className="secondaryText">
-          Punata es una ciudad y municipio de Bolivia, capital de la provincia de Punata en el departamento de Cochabamba.            <br />
-          Su nombre deriva del quechua y significa "altura o lugar alto". Es conocida por ser una de las mayores productoras de la chicha del Valle, bebida tradicional que se mantiene desde la época incaica, <br />
-          y también es conocida por la elaboración de los famosos rosquetes. Debido a esto se la conoce con el apodo de La Perla del Valle.
-                    </span>
+            <span className="bold-subtitle">MUNICIPIO:</span> Punata <br />
+            <span className="bold-subtitle">CARACTERÍSTICA:</span> La Perla del
+            Valle <br />
+            <span className="bold-subtitle">FUNDACIÓN:</span> 4 de enero 1972{" "}
+            <br />
+            <span className="bold-subtitle">ANIVERSARIO:</span> 18 de mayo{" "}
+            <br />
+            <span className="bold-subtitle">CLIMA:</span> Templado DISTANCIA: 50
+            km. PARADA: Av. República frente al Templo San Carlos <br />
+            <span className="bold-subtitle">EXTENSIÓN:</span> 178,17 km2 FERIA
+            SEMANAL: Martes FERIAS: Feria de la Chicha y el Rosquete (2ª semana
+            de mayo) <br />
+            <span className="bold-subtitle">FESTIVIDAD:</span> Señor de los
+            Milagros (22 al 24 de septiembre) <br />
+            Punata tiene principalmente producción agrícola. Los cultivos más
+            importantes son el trigo, papa, avena, maíz, arveja, frutales como
+            durazno, pera, manzana, ciruela, frutillas etc. La actividad
+            agrícola de Punata es reconocida por la producción de peras,
+            duraznos y otras frutas en huertos frutales. También se producen
+            hortalizas y pasturas mejoradas de alto rendimiento, como la
+            alfalfa. En las partes altas se cultiva variedades de papa, la
+            papaliza, la oca, trigo y maíz.
+          </span>
 
           <Accordion
             className="accordion"

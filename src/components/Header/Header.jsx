@@ -12,7 +12,7 @@ const Header = () => {
 
         {/* menu */}
         <div className={`flexCenter h-menu ${menuOpened ? 'open' : ''}`}>
-          <a href="#value">Acerca de la alcaldia </a>
+          <a href="#value">Informacion </a>
           <a href="#residencies">Proyectos</a>
           <a href="#contact-us">Servicios</a>
           <a href="#get-started">Concejo</a>
