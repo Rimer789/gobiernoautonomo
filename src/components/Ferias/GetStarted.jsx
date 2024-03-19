@@ -5,9 +5,9 @@ const GetStarted = () => {
     <div id="get-started" className="g-wrapper">
       <div className="paddings innerWidth g-container">
         <div className="flexColCenter inner-container">
-          <span className="primaryText">Concejo Municipal</span>
+          <span className="primaryText">Ferias Municipales</span>
           <span className="secondaryText">
-            detalles del concejo Municipal
+            detalles de ferias municipales 
            
           </span>
           

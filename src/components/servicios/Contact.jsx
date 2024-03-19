@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import data from "../../utils/servicios.json";
 import { sliderSettings } from "../../utils/common";
 import "./Contact.css";
-import { MdCall } from "react-icons/md";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
 const Contact = () => {

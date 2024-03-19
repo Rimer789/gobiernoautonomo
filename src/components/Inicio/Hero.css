@@ -7,10 +7,14 @@
 
 
 .hero-container {
+  margin-top: 20px;
   justify-content: space-around;
-  align-items: flex-end; 
-  background-color: rgba(4, 97, 32, 0.274);
+  align-items: flex-end;
+  background-image: url('../../../public/portada4.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
 }
+
 
 
 /* left side */
@@ -20,7 +24,20 @@
 
 .hero-title {
   position: relative;
-  z-index: 1;
+  z-index: 1; 
+  background-color: rgba(85, 84, 84, 0.438);
+}
+.hero-descripcion {
+  position: relative;
+  z-index: 1; 
+  background-color: rgba(85, 84, 84, 0.438);
+  height: auto;
+}
+.hero-descripcion > h2 {
+  margin-top: 10%;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 4rem;
 }
 .hero-title > h1 {
   margin-top: 10%;
@@ -76,8 +93,11 @@
 
 /* mobile screens */
 @media  (max-width: 640px){
-  .hero-container{
-    margin-top: 2rem;
+  .hero-container {
+    justify-content: space-around;
+    align-items: flex-end; 
+    background-image: none; /* Eliminar la imagen de fondo */
+    background-color: rgba(4, 97, 32, 0.274);
   }
   .hero-title>h1{
     font-size: 2.5rem;

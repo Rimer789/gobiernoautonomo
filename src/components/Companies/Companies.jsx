@@ -3,7 +3,6 @@ import './Companies.css'
 const Companies = () => {
   return (
     <section className="c-wrapper">
-      
     </section>
   );
 };

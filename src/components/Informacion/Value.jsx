@@ -13,7 +13,14 @@ import "./Value.css";
 
 const Value = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ["./portada1.jpg", "./portada2.jpg", "./portada3.jpg", "./portada4.jpg", "./portada5.jpg", "./portada6.jpg", "./portada7.jpg"];
+  const images = [
+    "./portada1.jpg",
+    "./portada2.jpg",
+    "./portada3.jpg",
+    "./portada4.jpg",
+    "./portada6.jpg",
+    "./portada7.jpg",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,8 +42,8 @@ const Value = () => {
         </div>
 
         <div className="flexColStart v-right">
-     
-
+          <br />
+          <br />
           <span className="secondaryText">
             <span className="bold-subtitle">MUNICIPIO:</span> Punata <br />
             <span className="bold-subtitle">CARACTERÍSTICA:</span> La Perla del

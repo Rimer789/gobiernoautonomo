@@ -23,8 +23,11 @@
   
   .secondaryText {
     font-size: 14px;
-    color: #666;
+    color: #ffffff;
     line-height: 1.5;
+    background-color: #46444493;
+    padding: 10px;
+    border-radius: 10px;
   }
   
   .primaryText {

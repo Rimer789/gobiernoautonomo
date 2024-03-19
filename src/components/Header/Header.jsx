@@ -33,6 +33,9 @@ const Header = () => {
           <a href="#get-started" onClick={closeMenu}>
             Ferias  
           </a>
+          <a>Turismo</a>
+          <p>--</p>
+          <a>Cultura</a>
         </nav>
         {/* Icono del menú */}
         <div className="menu-icon" onClick={toggleMenu}>

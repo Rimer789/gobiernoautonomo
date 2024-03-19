@@ -6,12 +6,6 @@
   background-color: #beb2b200;
   z-index: 1000;
 }
-.h-menu a {
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-weight: bold; /* Hacer que el texto sea negrita */
-  font-size: 1.1em; /* Ajustar el tamaño del texto según sea necesario */
-}
 
 
 
@@ -28,17 +22,18 @@
   display: flex;
   justify-content: flex-end; /* Alinear elementos del menú a la derecha en PC */
   align-items: flex-end; /* Alinear elementos del menú a la derecha en PC */
+  background-color: rgb(4, 63, 17);
 }
 
 .h-menu a {
   margin-left: 20px; /* Añadir espaciado entre elementos del menú en PC */
+  margin-top: 10px;
   margin-bottom: 10px; /* Añadir espaciado entre elementos del menú en móvil */
   width: calc(25% - 20px); /* Establece el ancho al 100% para que todas las secciones tengan el mismo ancho */
-  background-color: #ccc;
-  border: 1px solid #999;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 5px 10px;
+  color: #ffffff;
   text-align: center; /* Centra el texto dentro de las secciones */
 }
 
