@@ -1,32 +1,138 @@
 [
   {
-    "name": "Poryecto 1",
-    "detail": "detalles",
-    "image": "./portada3.jpg"
+    "name": "CANCHA COMUNIDAD THAJRA ",
+    "detail": "Detalles del proyecto 1",
+    "image": "./proyectos/canchacomunidadthajra/IMG_7555.JPG",
+    "additionalDetails": {
+      "description": "Se entrega una cancha deportivo para la comunidad thajra",
+      "images": ["./proyectos/canchacomunidadthajra/IMG_7541.JPG", "./proyectos/canchacomunidadthajra/IMG_7480.JPG","./proyectos/canchacomunidadthajra/IMG_7479.JPG" ]
+    }
   },
   {
-    "name": "Poryecto 1",
-    "detail": "detalles",
-    "image": "./portada3.jpg"
+    "name": "CENTRO DE CAPACITACION COMUNIDAD DE LEON RANCHO",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/leonrancho/IMG_3231.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/leonrancho/IMG_3131.JPG", "./proyectos/leonrancho/IMG_3135.JPG", "./proyectos/leonrancho/IMG_3136.JPG", "./proyectos/leonrancho/IMG_3155.JPG"]
+    }
   },
   {
-    "name": "Poryecto 1",
-    "detail": "detalles",
-    "image": "./portada3.jpg"
+    "name": "CONSTRUCCION CUBIERTAS Y CANCHAS PLAZA GENERAL PANDO",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/generalpando/21.jpg",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/generalpando/22.jpg", "./proyectos/generalpando/23.jpg", "./proyectos/generalpando/24.jpg", "./proyectos/generalpando/25.jpg", "./proyectos/generalpando/26.JPG"]
+    }
   },
   {
-    "name": "Poryecto 1",
-    "detail": "detalles",
-    "image": "./portada3.jpg"
+    "name": "CUBIERTA KHOCHI ALTO",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/khochialto/23.jpg",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/khochialto/22.jpg", "./proyectos/khochialto/21.jpg", "./proyectos/khochialto/24.jpg"]
+    }
   },
   {
-    "name": "Poryecto 1",
-    "detail": "detalles",
-    "image": "./portada3.jpg"
+    "name": "ENTREGA DE CARRO BASURERO Y CONTENEDORES ",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/carrobasurero/22.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/carrobasurero/21.JPG", "./proyectos/carrobasurero/23.JPG", "./proyectos/carrobasurero/24.JPG"]
+    }
   },
   {
-    "name": "Poryecto 1",
-    "detail": "detalles",
-    "image": "./portada3.jpg"
+    "name": "EQUIPAMIENTO AL HOSPITAL DR. MANUEL ASENCIO VILLARROEL DE PUNATA ",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/hospitalpunata/28.jpg",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/hospitalpunata/21.jpg", "./proyectos/hospitalpunata/22.jpg", "./proyectos/hospitalpunata/23.jpg","./proyectos/hospitalpunata/24.jpg","./proyectos/hospitalpunata/25.jpg","./proyectos/hospitalpunata/26.jpg","./proyectos/hospitalpunata/27.jpg","./proyectos/hospitalpunata/29.jpeg"]
+    }
+  },
+  {
+    "name": "PARQUE INFANTIL UNIDAD EDUCATIVA JESUS LARA",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/parqueinfantil/25.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/parqueinfantil/21.JPG", "./proyectos/parqueinfantil/22.JPG", "./proyectos/parqueinfantil/23.JPG","./proyectos/parqueinfantil/24.JPG"]
+    }
+  },
+  {
+    "name": "PAVIMENTO RIGIDO CALLE AVAROA",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/calleavaroa/23.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/calleavaroa/21.JPG", "./proyectos/calleavaroa/22.JPG"]
+    }
+  },
+  {
+    "name": "PAVIMENTO RIGIDO CALLE INGAVI Y CALLE VICTORIA",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/calleingavivictoria/21.jpg",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/calleingavivictoria/22.jpg", "./proyectos/calleingavivictoria/23.jpg","./proyectos/calleingavivictoria/24.jpg","./proyectos/calleingavivictoria/25.jpg"]
+    }
+  },
+  {
+    "name": "PLANTA DE OXIGENO",
+    "detail": "Detalles del proyecto 2",
+    "image": "./proyectos/plantaoxigeno/21.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 2",
+      "images": ["./proyectos/plantaoxigeno/22.JPG", "./proyectos/plantaoxigeno/23.JPG"]
+    }
+  },
+  {
+    "name": "REMODELACION Y REFACCION DE LA PLAZA PRINCIPAL 18 DE MAYO",
+    "detail": "Detalles del proyecto 3",
+    "image": "./proyectos/plaza/28.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 3",
+      "images": ["./proyectos/plaza/21.JPG", "./proyectos/plaza/22.JPG","./proyectos/plaza/23.JPG","./proyectos/plaza/24.JPG","./proyectos/plaza/25.JPG","./proyectos/plaza/26.JPG","./proyectos/plaza/27.JPG"]
+    }
+  },
+  {
+    "name": "TANQUE ELEVADO CAMACHO RANCHO",
+    "detail": "Detalles del proyecto 3",
+    "image": "./proyectos/camachorancho/24.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 3",
+      "images": ["./proyectos/camachorancho/22.JPG", "./proyectos/camachorancho/23.JPG","./proyectos/camachorancho/21.JPG"]
+    }
+  },
+  {
+    "name": "TANQUE ELEVADO COMUNIDAD ALTO ALIANZA",
+    "detail": "Detalles del proyecto 3",
+    "image": "./proyectos/altoalianza/24.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 3",
+      "images": ["./proyectos/altoalianza/22.JPG", "./proyectos/altoalianza/23.JPG","./proyectos/altoalianza/21.JPG"]
+    }
+  },
+  {
+    "name": "TANQUE SEMIENTERRADO DISTRITO-1",
+    "detail": "Detalles del proyecto 3",
+    "image": "./proyectos/distritouno/25.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 3",
+      "images": ["./proyectos/distritouno/22.JPG", "./proyectos/distritouno/23.JPG","./proyectos/distritouno/21.JPG","./proyectos/distritouno/24.JPG","./proyectos/distritouno/26.JPG","./proyectos/distritouno/27.JPG"]
+    }
+  },
+  {
+    "name": "UNIDAD EDUCATIVA LEON RANCHO",
+    "detail": "Detalles del proyecto 3",
+    "image": "./proyectos/leonranchi/23.JPG",
+    "additionalDetails": {
+      "description": "Descripción detallada del proyecto 3",
+      "images": ["./proyectos/leonranchi/22.JPG", "./proyectos/leonranchi/21.JPG"]
+    }
   }
+  
 ]

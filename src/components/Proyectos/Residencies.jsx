@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from 'react';
 import data from "../../utils/slider.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "./Residencies.css";
 import { sliderSettings } from "../../utils/common";
+
 const Residencies = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <div id="residencies" className="r-wrapper">
       <div className="paddings innerWidth r-container">
@@ -16,23 +26,22 @@ const Residencies = () => {
         <Swiper {...sliderSettings}>
           <SlideNextButton />
           {/* slider */}
-          {data.map((card, i) => (
-            <SwiperSlide key={i}>
+          {data.map((project, i) => (
+            <SwiperSlide key={i} onClick={() => handleProjectClick(project)}>
               <div className="flexColStart r-card">
-                <img src={card.image} alt="home" />
-
-                <span className="primaryText">{card.name}</span>
-                <span className="secondaryText">{card.detail}</span>
+                <img src={project.image} alt="home" />
+                <span className="primaryText">{project.name}</span>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+        {selectedProject && (
+          <ProjectModal project={selectedProject} onClose={handleCloseModal} />
+        )}
       </div>
     </div>
   );
 };
-
-export default Residencies;
 
 const SlideNextButton = () => {
   const swiper = useSwiper();
@@ -47,3 +56,34 @@ const SlideNextButton = () => {
     </div>
   );
 };
+
+const ProjectModal = ({ project, onClose }) => {
+  const handleOverlayClick = (e) => {
+    if (e.target.classList.contains('modal-overlay')) {
+      onClose();
+    }
+  };
+
+  return (
+    <div className="modal-overlay" onClick={handleOverlayClick}>
+      <div className="modal">
+        <div className="modal-content">
+          <h2>{project.name}</h2>
+          <span className="close" onClick={onClose}>&times;</span>
+          <p>{project.additionalDetails.description}</p>
+          <div className="images">
+            {project.additionalDetails.images.map((image, index) => (
+              <img key={index} src={image} alt={`Project ${index + 1}`} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+
+
+export default Residencies;

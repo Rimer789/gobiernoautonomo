@@ -1,5 +1,5 @@
 import { HiShieldCheck } from "react-icons/hi";
-import { MdCancel, MdAnalytics } from "react-icons/md";
+import { MdCancel } from "react-icons/md";
 const data = [
   {
     icon: <HiShieldCheck/>,

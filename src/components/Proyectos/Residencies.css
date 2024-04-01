@@ -69,6 +69,52 @@
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 99999; /* Asegura que el botón esté por encima del contenido del modal */
+  background: r;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 @media (max-width: 640px) {
   .r-head{
