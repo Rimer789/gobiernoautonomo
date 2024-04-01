@@ -97,7 +97,7 @@
     justify-content: space-around;
     align-items: flex-end; 
     background-image: none; /* Eliminar la imagen de fondo */
-    background-color: rgba(4, 97, 32, 0.274);
+    background-color:  #092e12;
   }
   .hero-title>h1{
     font-size: 2.5rem;

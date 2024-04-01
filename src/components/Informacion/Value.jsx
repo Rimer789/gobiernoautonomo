@@ -68,8 +68,10 @@ const Value = () => {
             alfalfa. En las partes altas se cultiva variedades de papa, la
             papaliza, la oca, trigo y maíz.
           </span>
+          <br />
+          <br />
 
-          <Accordion
+          {/* <Accordion
             className="accordion"
             allowMultipleExpanded={false}
             preExpanded={[0]}
@@ -90,7 +92,7 @@ const Value = () => {
                 </AccordionItemPanel>
               </AccordionItem>
             ))}
-          </Accordion>
+          </Accordion> */}
         </div>
       </div>
     </section>

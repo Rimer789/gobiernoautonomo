@@ -13,7 +13,11 @@
 }
 
 .v-wrappera {
-  background-color: #2074359d;
+  background-image: url('../../../public/portada6.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
+  background-size: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+  padding: 20px 0; /* Ajusta el relleno según sea necesario */
 }
 .v-right {
   gap: 0.5rem;
@@ -64,5 +68,9 @@
 @media (max-width: 768px) {
     .accordionButton .primaryText{
         font-size: .8rem;
+    }
+    .v-wrappera {
+      background-image: none; /* Elimina la imagen de fondo */
+      background-color: #092e12; /* Fondo de color para dispositivos móviles */
     }
 }
