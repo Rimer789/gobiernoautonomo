@@ -7,28 +7,28 @@ import { sliderSettings } from "../../utils/common";
 const places = [
   {
     name: "LA VILLA",
-    image: "./portada4.jpg"
+    image: "./portada4.jpg",
   },
   {
     name: "LA ERA",
-    image: "./portada4.jpg"
+    image: "./portada4.jpg",
   },
   {
     name: "Nombre del lugar 2",
-    image: "./portada4.jpg"
+    image: "./portada4.jpg",
   },
   {
     name: "Nombre del lugar 3",
-    image: "./portada4.jpg"
+    image: "./portada4.jpg",
   },
   {
     name: "Nombre del lugar 4",
-    image: "./portada4.jpg"
+    image: "./portada4.jpg",
   },
   {
     name: "Nombre del lugar 5",
-    image: "./portada4.jpg"
-  }
+    image: "./portada4.jpg",
+  },
 ];
 
 const Turismo = ({ onShowPlace, onShowEra }) => {
@@ -42,23 +42,28 @@ const Turismo = ({ onShowPlace, onShowEra }) => {
 
   return (
     <div id="turismo" className="r-wrapper">
-      <div className="paddings innerWidth t-container">
-        <div className="flexColStart r-head">
-          <span className="orangeText">Nuestros Lugares </span>
-          <span className="primaryText">Turisticos.</span>
+      <div className="paddings innerWidth g-container">
+        <div className="paddings innerWidth t-container">
+          <div className="flexColStart r-head">
+            <span className="orangeText">Nuestros Lugares </span>
+            <span className="primaryText">Turisticos.</span>
+          </div>
+          <Swiper {...sliderSettings}>
+            <SlideNextButton />
+            {places.map((place, index) => (
+              <SwiperSlide key={index}>
+                {/* Renderiza un cuadro para cada lugar */}
+                <div
+                  className="flexColStart r-card"
+                  onClick={() => handleShowPlace(place)}
+                >
+                  <img src={place.image} alt={place.name} />
+                  <span className="primaryText">{place.name}</span>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        <Swiper {...sliderSettings}>
-          <SlideNextButton />
-          {places.map((place, index) => (
-            <SwiperSlide key={index}>
-              {/* Renderiza un cuadro para cada lugar */}
-              <div className="flexColStart r-card" onClick={() => handleShowPlace(place)}>
-                <img src={place.image} alt={place.name} />
-                <span className="primaryText">{place.name}</span>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
       </div>
     </div>
   );

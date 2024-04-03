@@ -1,7 +1,9 @@
 .t-container {
-    gap: 2rem;
-    position: relative;
-    overflow: hidden;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(8, 80, 17);
+  border-radius: 20px;
   }
   
   .r-head{

@@ -99,6 +99,7 @@ a {
 @media (min-width: 1280px), (min-width: 768px) {
   .paddings {
     padding: 2rem;
+    background-color: #021f0d;
   }
 }
 
