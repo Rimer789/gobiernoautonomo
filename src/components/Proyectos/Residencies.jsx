@@ -18,6 +18,7 @@ const Residencies = () => {
 
   return (
     <div id="residencies" className="r-wrapper">
+            <div className="paddings innerWidth g-container">
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
           <span className="orangeText">Nuestros </span>
@@ -39,6 +40,7 @@ const Residencies = () => {
           <ProjectModal project={selectedProject} onClose={handleCloseModal} />
         )}
       </div>
+    </div>
     </div>
   );
 };

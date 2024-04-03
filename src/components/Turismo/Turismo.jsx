@@ -42,7 +42,7 @@ const Turismo = ({ onShowPlace, onShowEra }) => {
 
   return (
     <div id="turismo" className="r-wrapper">
-      <div className="paddings innerWidth r-container">
+      <div className="paddings innerWidth t-container">
         <div className="flexColStart r-head">
           <span className="orangeText">Nuestros Lugares </span>
           <span className="primaryText">Turisticos.</span>

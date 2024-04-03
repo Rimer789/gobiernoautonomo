@@ -1,9 +1,8 @@
 .inner-container{
     gap: 1.5rem;
-    background: #4161df;
+    background: #5f8163;
     padding: 2rem;
     border-radius: 10px;
-    border: 6px solid #5d77d6;
     text-align: center;
 }
 
@@ -19,4 +18,43 @@
     border: 2px solid white;
     box-shadow: var(--shadow);
     border-radius: 10px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image {
+  max-width: 550px; /* Tamaño para vista de PC */
+  height: auto;
+  margin: 0 5px;
+}
+
+.ubicacion-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.ubicacion-icono {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  color: red;
+}
+
+.ubicacion-texto {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Media query para vista móvil */
+@media only screen and (max-width: 768px) {
+  .image {
+    max-width: 100%; /* Hacer que las imágenes sean completamente responsivas en vista móvil */
+    margin: 5px; /* Ajustar el margen entre las imágenes */
+  }
 }

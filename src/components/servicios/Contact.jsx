@@ -15,7 +15,9 @@ const Contact = () => {
 
   return (
     <div id="contact-us" className="c-wrapper">
-      <div className="paddings innerWidth r-container">
+                  <div className="paddings innerWidth g-container">
+
+      <div className="paddings innerWidth s-container">
         <div className="flexColStart r-head">
           <span className="orangeText">Nuestros </span>
           <span className="primaryText">Servicios municipales</span>
@@ -36,6 +38,8 @@ const Contact = () => {
           <Modal onClose={() => setModalOpen(false)} selectedService={selectedService} />
         )}
       </div>
+      </div>
+
     </div>
   );
 };

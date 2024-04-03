@@ -2,6 +2,12 @@
   gap: 2rem;
   position: relative;
   overflow: hidden;
+  background-color: rgb(8, 80, 17);
+  border-radius: 20px;
+}
+.inner-containe .primaryText{
+  color: white;
+  font-weight: 600;
 }
 
 .r-head{

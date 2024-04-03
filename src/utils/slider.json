@@ -47,10 +47,10 @@
   {
     "name": "EQUIPAMIENTO AL HOSPITAL DR. MANUEL ASENCIO VILLARROEL DE PUNATA ",
     "detail": "Detalles del proyecto 2",
-    "image": "./proyectos/hospitalpunata/28.jpg",
+    "image": "./proyectos/hospitalpunata/28.JPG",
     "additionalDetails": {
       "description": "Descripción detallada del proyecto 2",
-      "images": ["./proyectos/hospitalpunata/21.jpg", "./proyectos/hospitalpunata/22.jpg", "./proyectos/hospitalpunata/23.jpg","./proyectos/hospitalpunata/24.jpg","./proyectos/hospitalpunata/25.jpg","./proyectos/hospitalpunata/26.jpg","./proyectos/hospitalpunata/27.jpg","./proyectos/hospitalpunata/29.jpeg"]
+      "images": ["./proyectos/hospitalpunata/21.jpg", "./proyectos/hospitalpunata/22.jpg", "./proyectos/hospitalpunata/23.jpg","./proyectos/hospitalpunata/24.jpg","./proyectos/hospitalpunata/25.jpg","./proyectos/hospitalpunata/26.jpg","./proyectos/hospitalpunata/27.JPG","./proyectos/hospitalpunata/29.jpeg"]
     }
   },
   {

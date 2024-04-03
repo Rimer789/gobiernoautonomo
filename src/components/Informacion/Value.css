@@ -6,6 +6,15 @@
 .v-container > div {
   flex: 1;
 }
+.v-container  {
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url('../../../public/portada6.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+}
+
 
 .bold-subtitle {
   font-weight: bold;
@@ -13,11 +22,10 @@
 }
 
 .v-wrappera {
-  background-image: url('../../../public/portada6.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
-  background-size: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-position: center; /* Centra la imagen */
-  padding: 20px 0; /* Ajusta el relleno según sea necesario */
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
 }
 .v-right {
   gap: 0.5rem;
@@ -70,7 +78,7 @@
         font-size: .8rem;
     }
     .v-wrappera {
-      background-image: none; /* Elimina la imagen de fondo */
-      background-color: #092e12; /* Fondo de color para dispositivos móviles */
+      background-image: none; 
+      background-color: #092e12; 
     }
 }
