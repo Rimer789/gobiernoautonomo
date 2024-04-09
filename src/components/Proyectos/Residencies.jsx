@@ -28,7 +28,7 @@ const Residencies = () => {
           <SlideNextButton />
           {data.map((project, i) => (
             <SwiperSlide key={i} onClick={() => handleProjectClick(project)}>
-              <div className="flexColStart r-card">
+              <div className="flexColStart r-cardp">
                 <img src={project.image} alt="home" />
                 <span className="primaryText">{project.name}</span>
               </div>
@@ -72,6 +72,7 @@ const ProjectModal = ({ project, onClose }) => {
           <h2>{project.name}</h2>
           <span className="close" onClick={onClose}>&times;</span>
           <p>{project.additionalDetails.description}</p>
+          <br />
           <div className="images">
             {project.additionalDetails.images.map((image, index) => (
               <img key={index} src={image} alt={`Project ${index + 1}`} />
