@@ -19,15 +19,14 @@ const Contact = () => {
 
       <div className="paddings innerWidth s-container">
         <div className="flexColStart r-head">
-          <span className="orangeText">Nuestros </span>
-          <span className="primaryText">Servicios municipales</span>
+          <span className="orangeText">DIRECCIONES MUNICIPALES </span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />
           {/* slider */}
           {data.map((card, i) => (
             <SwiperSlide key={i} onClick={() => handleCardClick(card)}>
-              <div className="flexColStart r-card">
+              <div className="flexColStart r-cards">
                 <span className="primaryText">{card.name}</span>
                 <span className="secondaryText">{card.detail}</span>
               </div>

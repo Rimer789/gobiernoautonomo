@@ -2,41 +2,44 @@
   gap: 2rem;
   position: relative;
   overflow: hidden;
-  background-color: rgb(8, 80, 17);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   }
   
   .r-head{
     margin-bottom: 2rem;
   }
-  .r-card {
+  .r-cardt {
     gap: 0.6rem;
     padding: 1rem;
     border-radius: 10px;
     max-width: max-content;
     margin: auto;
     transition: all 300ms ease-in;
+    background-color: #008000;
   }
   
-  .r-card > img {
+  .r-cardt > img {
     width: 100%;
     max-width: 15rem;
   }
-  .r-card > :nth-child(2) {
+  .r-cardt > :nth-child(2) {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .r-card > :nth-child(3) {
+  .r-cardt > :nth-child(3) {
     font-size: 1.5rem;
   }
-  .r-card > :nth-child(4) {
+  .r-cardt > :nth-child(4) {
     font-size: 0.7rem;
     width: 15rem;
   }
   
-  .r-card:hover {
+  .r-cardt:hover {
     scale: 1.025;
     cursor: pointer;
+    background-color: #03490e;
+
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0%,

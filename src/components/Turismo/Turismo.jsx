@@ -45,8 +45,7 @@ const Turismo = ({ onShowPlace, onShowEra }) => {
       <div className="paddings innerWidth g-container">
         <div className="paddings innerWidth t-container">
           <div className="flexColStart r-head">
-            <span className="orangeText">Nuestros Lugares </span>
-            <span className="primaryText">Turisticos.</span>
+            <span className="orangeText">LUGARES TURISTICOS</span>
           </div>
           <Swiper {...sliderSettings}>
             <SlideNextButton />
@@ -54,7 +53,7 @@ const Turismo = ({ onShowPlace, onShowEra }) => {
               <SwiperSlide key={index}>
                 {/* Renderiza un cuadro para cada lugar */}
                 <div
-                  className="flexColStart r-card"
+                  className="flexColStart r-cardt"
                   onClick={() => handleShowPlace(place)}
                 >
                   <img src={place.image} alt={place.name} />

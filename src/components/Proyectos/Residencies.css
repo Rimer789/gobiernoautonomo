@@ -20,7 +20,7 @@
   max-width: max-content;
   margin: auto;
   transition: all 300ms ease-in;
-  background-color: rgb(28, 80, 8);
+  background-color: #008000;
 }
 
 .r-cardp > img {
