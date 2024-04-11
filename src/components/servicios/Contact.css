@@ -23,7 +23,7 @@
 }
 
 .r-cards > :nth-child(2) {
-  font-size: 1.2rem;
+  font-size: 5.2rem;
   font-weight: 600;
   color: #fff; 
 }
@@ -127,6 +127,11 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+.primaryTexts {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 

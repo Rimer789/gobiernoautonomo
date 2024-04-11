@@ -37,6 +37,7 @@ const Header = () => {
           Turismo
         </a>
         <a href="#turismo">Cultura</a>
+        <a href="#turismo">Gastronomia</a>
       </nav>
       <div className="menu-icon" onClick={toggleMenu}>
         <BiMenuAltRight size={30} />

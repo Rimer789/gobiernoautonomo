@@ -1,32 +1,37 @@
 [
-    {
-      "name": "servicio 1",
-      "detail": "detalles"
-    },
-    {
-        "name": "servicio 1",
-        "detail": "detalles"
-      },
-      {
-        "name": "servicio 1",
-        "detail": "detalles"
-      },
-      {
-        "name": "servicio 1",
-        "detail": "detalles"
-      },
-      {
-        "name": "servicio 1",
-        "detail": "detalles"
-      },
-      {
-        "name": "servicio 1",
-        "detail": "detalles"
-      },
-      {
-        "name": "servicio 1",
-        "detail": "detalles"
-      }
-   
-  ]
-  
+  {
+    "name": "DIRECCION DE ECONOMIA Y FINANZAS",
+    "icon": "FaMoneyBillAlt",
+    "detail": "detalles"
+  },
+  {
+    "name": "DIRECCION DE INGRESOS MUNICIPALES",
+    "icon": "FaBalanceScale",
+    "detail": "detalles"
+  },
+  {
+    "name": "DIRECCION DE URBANISMO Y CATASTRO",
+    "icon": "FaCity",
+    "detail": "detalles"
+  },
+  {
+    "name": "DIRECCION DE OBRAS PUBLICAS",
+    "icon": "FaTools",
+    "detail": "detalles"
+  },
+  {
+    "name": "DIRECCION DE PLANIFICACION",
+    "icon": "FaClipboardList",
+    "detail": "detalles"
+  },
+  {
+    "name": "DIRECCION DE DESARROLLO PRODUCTIVO Y MEDIO AMBIENTE",
+    "icon": "FaLeaf",
+    "detail": "detalles"
+  },
+  {
+    "name": "DIRECCION DE DESARROLLO HUMANO",
+    "icon": "FaUser",
+    "detail": "detalles"
+  }
+]

@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 import "swiper/css";
 import "./Turismo.css";
 import { sliderSettings } from "../../utils/common";
@@ -8,38 +9,36 @@ const places = [
   {
     name: "LA VILLA",
     image: "./portada4.jpg",
+    link: '/villa'
   },
   {
     name: "LA ERA",
     image: "./portada4.jpg",
+    link: '/era'
   },
   {
     name: "Nombre del lugar 2",
     image: "./portada4.jpg",
+    link: '/lugar2'
   },
   {
     name: "Nombre del lugar 3",
     image: "./portada4.jpg",
+    link: '/lugar3'
   },
   {
     name: "Nombre del lugar 4",
     image: "./portada4.jpg",
+    link: '/lugar4'
   },
   {
     name: "Nombre del lugar 5",
     image: "./portada4.jpg",
+    link: '/lugar5'
   },
 ];
 
-const Turismo = ({ onShowPlace, onShowEra }) => {
-  const handleShowPlace = (place) => {
-    if (place.name === "LA VILLA") {
-      onShowPlace();
-    } else if (place.name === "LA ERA") {
-      onShowEra();
-    }
-  };
-
+const Turismo = () => {
   return (
     <div id="turismo" className="r-wrapper">
       <div className="paddings innerWidth g-container">
@@ -51,14 +50,12 @@ const Turismo = ({ onShowPlace, onShowEra }) => {
             <SlideNextButton />
             {places.map((place, index) => (
               <SwiperSlide key={index}>
-                {/* Renderiza un cuadro para cada lugar */}
-                <div
-                  className="flexColStart r-cardt"
-                  onClick={() => handleShowPlace(place)}
-                >
-                  <img src={place.image} alt={place.name} />
-                  <span className="primaryText">{place.name}</span>
-                </div>
+                <Link to={place.link}> {/* Utiliza Link para redireccionar */}
+                  <div className="flexColStart r-cardt">
+                    <img src={place.image} alt={place.name} />
+                    <span className="primaryTextt">{place.name}</span>
+                  </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

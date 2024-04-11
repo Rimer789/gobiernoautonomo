@@ -6,17 +6,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.villa {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: white; /* Cambia el color de fondo según lo necesites */
   z-index: 9999; /* Asegura que la clase villa esté en la parte superior */
 }
@@ -25,7 +14,7 @@
 
 
 .villa-container {
-  background-color: #f0f0f0;
+  background-color: #124b2f;
   border-radius: 10px;
   padding: 20px;
   width: 100%; /* Ancho máximo del contenido */

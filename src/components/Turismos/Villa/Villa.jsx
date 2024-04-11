@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 import "./Villa.css";
 
 const Villa = () => {
@@ -13,7 +14,7 @@ const Villa = () => {
           <div className="villa-title">
             <h1>Villa</h1>
           </div>
-          <a href="/" onClick={handleBackClick}>Atrás</a>
+          <Link to = "/turismo">atras </Link>
         </div>
       </div>
     </div>

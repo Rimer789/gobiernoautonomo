@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router ,Route, Routes } from "react-router-dom";
 import Companies from "./components/Companies/Companies";
 import Contact from "./components/servicios/Contact";
 import Footer from "./components/referencias/Footer";
@@ -13,25 +13,15 @@ import Villa from "./components/Turismos/Villa/Villa";
 import Era from "./components/Turismos/Laera/Era";
 
 function App() {
-  const [showVilla, setShowVilla] = useState(false);
-  const [showEra, setShowEra] = useState(false);
-
-  const handleShowVilla = () => {
-    setShowVilla(true);
-    setShowEra(false); // Asegurarse de ocultar Era si se muestra Villa
-  };
-
-  const handleShowEra = () => {
-    setShowEra(true);
-    setShowVilla(false); // Asegurarse de ocultar Villa si se muestra Era
-  };
-
-  const handleHideVilla = () => {
-    setShowVilla(false);
-  };
+  
 
   return (
     <Router>
+      <Routes> {/* Utiliza Routes para definir tus rutas */}
+          <Route path="/villa" element={<Villa />} /> {/* Define la ruta */}
+          <Route path="/era" element={<Era />} /> {/* Define la ruta */}
+          <Route path="/turismo" element={<Turismo />} /> {/* Define la ruta */}
+        </Routes>
       <div className="App">
         <div>
           <div className="white-gradient" />
@@ -42,13 +32,8 @@ function App() {
         <Value />
         <Residencies />
         <Contact />
-        {showVilla ? (
-          <Villa onBack={handleHideVilla} />
-        ) : showEra ? (
-          <Era /> // Mostrar Era si showEra es true
-        ) : (
-          <Turismo onShowPlace={handleShowVilla} onShowEra={handleShowEra} /> // Pasar función para mostrar Era
-        )}
+        
+        <Turismo />
         <GetStarted />
         <Footer />
       </div>

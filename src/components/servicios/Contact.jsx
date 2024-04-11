@@ -3,6 +3,17 @@ import data from "../../utils/servicios.json";
 import { sliderSettings } from "../../utils/common";
 import "./Contact.css";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { FaMoneyBillAlt, FaBalanceScale, FaCity, FaTools, FaClipboardList, FaLeaf, FaUser } from 'react-icons/fa'; // Importa los iconos de React Icons
+
+const icons = [
+  <FaMoneyBillAlt />,
+  <FaBalanceScale />,
+  <FaCity />,
+  <FaTools />,
+  <FaClipboardList />,
+  <FaLeaf />,
+  <FaUser />
+];
 
 const Contact = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -15,30 +26,30 @@ const Contact = () => {
 
   return (
     <div id="contact-us" className="c-wrapper">
-                  <div className="paddings innerWidth g-container">
-
-      <div className="paddings innerWidth s-container">
-        <div className="flexColStart r-head">
-          <span className="orangeText">DIRECCIONES MUNICIPALES </span>
+      <div className="paddings innerWidth g-container">
+        <div className="paddings innerWidth s-container">
+          <div className="flexColStart r-head">
+            <span className="orangeText">DIRECCIONES MUNICIPALES </span>
+          </div>
+          <Swiper {...sliderSettings}>
+            <SlideNextButton />
+            {/* slider */}
+            {data.map((card, i) => (
+              <SwiperSlide key={i} /*onClick={() => handleCardClick(card)}*/>
+                <div className="flexColStart r-cards">
+                  <span className="primaryTexts">
+                     {card.name}
+                  </span>
+                  <span className="secondaryText">{icons[i % icons.length]}</span>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          {modalOpen && (
+            <Modal onClose={() => setModalOpen(false)} selectedService={selectedService} />
+          )}
         </div>
-        <Swiper {...sliderSettings}>
-          <SlideNextButton />
-          {/* slider */}
-          {data.map((card, i) => (
-            <SwiperSlide key={i} onClick={() => handleCardClick(card)}>
-              <div className="flexColStart r-cards">
-                <span className="primaryText">{card.name}</span>
-                <span className="secondaryText">{card.detail}</span>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        {modalOpen && (
-          <Modal onClose={() => setModalOpen(false)} selectedService={selectedService} />
-        )}
       </div>
-      </div>
-
     </div>
   );
 };
@@ -66,7 +77,10 @@ const Modal = ({ onClose, selectedService }) => {
         <button className="closeButton" onClick={onClose}>
           X
         </button>
-        <h2>{selectedService.name}</h2>
+        <h2>
+          {icons[data.findIndex(service => service.name === selectedService.name) % icons.length]}{" "}
+          {selectedService.name}
+        </h2>
         <p>{selectedService.detail}</p>
       </div>
     </div>
