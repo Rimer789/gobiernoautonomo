@@ -20,7 +20,7 @@ function App() {
       <Routes> {/* Utiliza Routes para definir tus rutas */}
           <Route path="/villa" element={<Villa />} /> {/* Define la ruta */}
           <Route path="/era" element={<Era />} /> {/* Define la ruta */}
-          <Route path="/turismo" element={<Turismo />} /> {/* Define la ruta */}
+          
         </Routes>
       <div className="App">
         <div>
