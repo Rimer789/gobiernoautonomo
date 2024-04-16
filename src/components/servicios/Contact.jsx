@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import data from "../../utils/servicios.json";
+import datos from "../../utils/colegios.json";
 import { sliderSettings } from "../../utils/common";
 import "./Contact.css";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
@@ -16,14 +17,6 @@ const icons = [
 ];
 
 const Contact = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState(null);
-
-  const handleCardClick = (service) => {
-    setSelectedService(service);
-    setModalOpen(true);
-  };
-
   return (
     <div id="contact-us" className="c-wrapper">
       <div className="paddings innerWidth g-container">
@@ -45,9 +38,37 @@ const Contact = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          {modalOpen && (
-            <Modal onClose={() => setModalOpen(false)} selectedService={selectedService} />
-          )}
+          
+        </div>
+      </div>
+      <div className="paddings innerWidth g-container">
+        <div className="paddings innerWidth s-container">
+          <div className="flexColStart r-head">
+            <span className="orangeText">UNIDADES EDUCATIVAS  </span>
+          </div>
+          <Swiper {...sliderSettings}>
+            <SlideNextButton />
+            {/* slider */}
+            {datos.map((card, i) => (
+              <SwiperSlide key={i} /*onClick={() => handleCardClick(card)}*/>
+                <div className="flexColStart r-cardss">
+                  <span className="">
+                     {card.unidad}
+                  </span>
+                  <span className="">
+                     {card.director}
+                  </span>
+                  <span className="">
+                     {card.ref}
+                  </span>
+                  <span className="">
+                     {card.nivel}
+                  </span>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          
         </div>
       </div>
     </div>
@@ -70,19 +91,4 @@ const SlideNextButton = () => {
   );
 };
 
-const Modal = ({ onClose, selectedService }) => {
-  return (
-    <div className="modalOverlay">
-      <div className="modalContent">
-        <button className="closeButton" onClick={onClose}>
-          X
-        </button>
-        <h2>
-          {icons[data.findIndex(service => service.name === selectedService.name) % icons.length]}{" "}
-          {selectedService.name}
-        </h2>
-        <p>{selectedService.detail}</p>
-      </div>
-    </div>
-  );
-};
+

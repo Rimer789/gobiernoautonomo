@@ -50,7 +50,7 @@ const Turismo = () => {
             <SlideNextButton />
             {places.map((place, index) => (
               <SwiperSlide key={index}>
-                <Link to={place.link}> {/* Utiliza Link para redireccionar */}
+                <Link to={place.link}> 
                   <div className="flexColStart r-cardt">
                     <img src={place.image} alt={place.name} />
                     <span className="primaryTextt">{place.name}</span>

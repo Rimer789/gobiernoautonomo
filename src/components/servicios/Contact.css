@@ -46,6 +46,51 @@
   background-color: #03490e;
   box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
 }
+/* Estilo para el contenedor principal */
+.flexColStart.r-cardss {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #176404; /* Color del borde */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilo para cada uno de los elementos span */
+.flexColStart.r-cardss span {
+  margin-bottom: 5px; /* Espaciado entre cada elemento */
+  font-size: 16px; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo para el título de la unidad */
+.flexColStart.r-cardss span:nth-child(1) {
+  font-weight: bold; /* Texto en negrita */
+  color: #000000; /* Color rojo */
+}
+
+/* Estilo para el texto "Director:" */
+.flexColStart.r-cardss span:nth-child(2)::before {
+  content: "Director: "; /* Agregar texto antes del contenido */
+  font-weight: bold; /* Texto en negrita */
+  color: #27ae60; /* Color verde */
+}
+
+/* Estilo para el texto "Referencia:" */
+.flexColStart.r-cardss span:nth-child(3)::before {
+  content: "Referencia: "; /* Agregar texto antes del contenido */
+  font-weight: bold; /* Texto en negrita */
+  color: #27ae60; /* Color naranja */
+}
+
+/* Estilo para el texto "Nivel:" */
+.flexColStart.r-cardss span:nth-child(4)::before {
+  content: "Nivel: "; /* Agregar texto antes del contenido */
+  font-weight: bold; /* Texto en negrita */
+  color: #27ae60; /* Color morado */
+}
+
 .c-container > div {
   flex: 1;
 }

@@ -1,0 +1,181 @@
+ [{
+    "director" : "Lic. Geovanna Arispe Zarate",
+    "unidad": "Adela Zamudio", 
+    "ref": "63872624",
+    "nivel": "PRIMARIA"
+},
+{
+    "director" : "Lic. Lucio Alvares Suyo",
+    "unidad": "Juana Azurduy de Padilla", 
+    "ref": "68479430",
+    "nivel": "PRIMARIA"
+},
+{
+    "director" : "Lic. Víctor Maida",
+    "unidad": "Jesús Lara", 
+    "ref": "68482133",
+    "nivel": "INICIAL"
+},
+{
+    "director" : "Lic. Juan Fanor C. Fernández",
+    "unidad": "Bolivia", 
+    "ref": "71463687",
+    "nivel": "PRIMARIA"
+},
+{
+    "director" : "Lic. Rolando Camacho Vila",
+    "unidad": "Simon Bolivar", 
+    "ref": "71441902",
+    "nivel": "PRIMARIA"
+},
+{
+    "director" : "Lic. Nohely Karen Salinas T. ",
+    "unidad": "Colorados de Bolivia", 
+    "ref": "68485430",
+    "nivel": "INICIAL"
+},
+{
+    "director" : "Lic. Leila Jaldin Villarroel",
+    "unidad": "Mcal. Antonio José de Sucre", 
+    "ref": "72712523",
+    "nivel": "PRIMARIA"
+},
+{
+    "director": "Lic. Jhenny Salazar Rios",
+    "unidad": "Punata Nocturno",
+    "ref": "75962131",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. Olivia Olivares Muñoz",
+    "unidad": "Zenobia Balderrama",
+    "ref": "75956133",
+    "nivel": "PRIMARIA"
+},
+{
+    "director": "M. Sc. Pastor Orellana R.",
+    "unidad": "Andres Maria Torrico",
+    "ref": "74360305",
+    "nivel": "PRIMARIA"
+},
+{
+    "director": "Lic. Kary Mónica Delgadillo",
+    "unidad": "18 De Mayo",
+    "ref": "76467205",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. Flaviano Claros Cano My.",
+    "unidad": "Desiderio Rocha",
+    "ref": "77424346",
+    "nivel": "PRIMARIA"
+},
+{
+    "director": "Lic. Víctor Hugo Oña",
+    "unidad": "D. Manuel Ascencio Villarroel",
+    "ref": "68378684",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. Ely Torrico Torrico",
+    "unidad": "Litoral",
+    "ref": "75920833",
+    "nivel": "PRIMARIA"
+},
+{
+    "director": "Lic. Braulio Tarqui Tarqui",
+    "unidad": "Gral. Rene Barrientos Ortuño",
+    "ref": "71426071",
+    "nivel": "PRIMARIA"
+},
+{
+    "director": "Lic. Jhonny Milán Arias",
+    "unidad": "Dr. Rubén Ferrufino Torrico",
+    "ref": "72723159",
+    "nivel": "PRIMARIA, SECUNDARIA"
+},
+{
+    "director": "Lic. Clary Mabel Montaño T.",
+    "unidad": "Josefa Manuela Gandarillas",
+    "ref": "79712896",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. José Luis Calisaya",
+    "unidad": "Eduardo Abaroa",
+    "ref": "68490618",
+    "nivel": "PRIMARIA"
+},
+{
+    "director": "Lic. Carla Diana Torrico R.",
+    "unidad": "Gualberto Villarroel",
+    "ref": "76985614",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. Gonzalo Brañez M.",
+    "unidad": "Punata (Don Bosco)",
+    "ref": "70606537",
+    "nivel": "PRIMARIA SECUNDARIA"
+},
+{
+    "director": "Lic. Limberth Villca Suyo",
+    "unidad": "Boliviano J. Guadalupano",
+    "ref": "71484080",
+    "nivel": "PRIMARIA SECUNDARIA"
+},
+{
+    "director": "Lic. Henrry Serna Claros",
+    "unidad": "Calama",
+    "ref": "67855794",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. Rodrigo Arispe Zarate",
+    "unidad": "Evo Morales Ayma",
+    "ref": "76954496",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. María Bernardete Rojas",
+    "unidad": "Mcal. Andrés de Santa Cruz",
+    "ref": "67010705",
+    "nivel": "SECUNDARIA"
+},
+{
+    "director": "Lic. Bethy Camacho",
+    "unidad": "Pacifico Canedo",
+    "ref": "60735304",
+    "nivel": "ALTERNATIVA"
+},
+{
+    "director": "Lic. Libio M. Mendez F.",
+    "unidad": "Señor Milagros",
+    "ref": "76458116",
+    "nivel": "ALTERNATIVA"
+},
+{
+    "director": "Lic. Wilder Torrico Arias",
+    "unidad": "Virgen de Rosario",
+    "ref": "71780383",
+    "nivel": "ALTERNATIVA"
+},
+{
+    "director": "Lic. Limber Tito Castro",
+    "unidad": "Guadalupano Especial",
+    "ref": "76451386",
+    "nivel": "ESPECIAL"
+},
+{
+    "director": "Lic. Mario Lino Mamani A.",
+    "unidad": "Álvaro García Linera",
+    "ref": "73007787",
+    "nivel": "PRIMARIO SECUNDARIA"
+},
+{
+    "director": "Lic. Israel Sánchez",
+    "unidad": "Latinoamericana",
+    "ref": "79795812",
+    "nivel": "PRIMARIO SECUNDARIA"
+}
+ ]

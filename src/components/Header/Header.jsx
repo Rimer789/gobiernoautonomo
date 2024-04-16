@@ -28,7 +28,7 @@ const Header = () => {
           Proyectos
         </a>
         <a href="#contact-us" onClick={closeMenu}>
-          Servicios
+          Direcciones
         </a>
         <a href="#get-started" onClick={closeMenu}>
           Ferias
