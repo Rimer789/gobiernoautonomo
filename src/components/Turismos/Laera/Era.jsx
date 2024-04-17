@@ -1,5 +1,4 @@
 import React from "react";
-import "./Era.css";
 
 const Villa = () => {
   const handleBackClick = () => {

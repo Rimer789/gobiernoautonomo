@@ -26,9 +26,8 @@ const Contact = () => {
           </div>
           <Swiper {...sliderSettings}>
             <SlideNextButton />
-            {/* slider */}
             {data.map((card, i) => (
-              <SwiperSlide key={i} /*onClick={() => handleCardClick(card)}*/>
+              <SwiperSlide key={i} >
                 <div className="flexColStart r-cards">
                   <span className="primaryTexts">
                      {card.name}
@@ -48,9 +47,8 @@ const Contact = () => {
           </div>
           <Swiper {...sliderSettings}>
             <SlideNextButton />
-            {/* slider */}
             {datos.map((card, i) => (
-              <SwiperSlide key={i} /*onClick={() => handleCardClick(card)}*/>
+              <SwiperSlide key={i} >
                 <div className="flexColStart r-cardss">
                   <span className="">
                      {card.unidad}

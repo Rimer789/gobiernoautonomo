@@ -1,48 +1,42 @@
-/* villa.css */
-
 .villa {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white; /* Cambia el color de fondo según lo necesites */
-  z-index: 9999; /* Asegura que la clase villa esté en la parte superior */
-}
-
-/* Estilos adicionales según sea necesario */
-
-
-.villa-container {
-  background-color: #124b2f;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%; /* Ancho máximo del contenido */
-  height: 100%; /* Altura máxima del contenedor */
-  overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
-}
-
-.villa-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.image-gallery {
+  background-color: #045322;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+  overflow-y: auto; /* Añadimos desplazamiento vertical para la clase .villa */
+}
+
+.villa-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  overflow-y: auto; /* Mantenemos el desplazamiento vertical para el contenido de .villa-container */
+}
+
+.villa-title {
+  margin-top: 1%;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.villa-gallery img {
+  width: 70%; /* Ajustamos el ancho de las imágenes */
+  height: auto;
+  border-radius: 10px; /* Agregamos bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos una sombra suave */
   margin-bottom: 20px;
 }
-
-.villa-image {
-  width: 100%;
-  max-width: 250px; /* Ancho máximo de las imágenes */
-  height: auto;
-  margin: 5px;
-  border-radius: 5px;
-}
-
-.villa-description {
-  text-align: justify;
+@media screen and (max-width: 768px) {
+  .villa-title {
+    font-size: 0.5rem; /* Reducir tamaño de fuente para dispositivos móviles */
+  }
 }
