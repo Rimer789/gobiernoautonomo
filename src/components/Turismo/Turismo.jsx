@@ -17,14 +17,14 @@ const places = [
     link: '/era'
   },
   {
-    name: "Nombre del lugar 2",
+    name: "HACIENDA DE SIVINGANI",
     image: "./portada4.jpg",
-    link: '/lugar2'
+    link: '/sivingani'
   },
   {
-    name: "Nombre del lugar 3",
+    name: "CEMENTERIO GENERAL",
     image: "./portada4.jpg",
-    link: '/lugar3'
+    link: '/cementerio'
   },
   {
     name: "Nombre del lugar 4",
