@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 const Rosquete = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ["./portada1.jpg", "./portada2.jpg", "./portada3.jpg"]; // Agregamos las rutas de las imágenes
+  const images = ["./proyectos/rosquete/rosquete1.jpg", "./proyectos/rosquete/rosquete2.jpg","./proyectos/rosquete/rosquete3.jpg", "./proyectos/rosquete/rosquete4.jpg","./proyectos/rosquete/rosquete5.jpg"]; 
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Cambiamos el intervalo a 3 segundos
+    }, 3000); 
 
     return () => clearInterval(interval);
   });

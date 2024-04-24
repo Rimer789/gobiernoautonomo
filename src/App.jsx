@@ -23,13 +23,13 @@ function App() {
 
   return (
     <Router>
-      <Routes> {/* Utiliza Routes para definir tus rutas */}
-          <Route path="/villa" element={<Villa />} /> {/* Define la ruta */}
-          <Route path="/era" element={<Era />} /> {/* Define la ruta */}
+      <Routes> 
+          <Route path="/villa" element={<Villa />} /> 
+          <Route path="/era" element={<Era />} /> 
           <Route path="/sivingani" element={<Sivingani/>}/>
-          <Route path="/cementerio" element={<Cementerio />} /> {/* Define la ruta */}
-          <Route path="/rosquete" element={<Rosquete />} /> {/* Define la ruta */}
-          <Route path="/chicha" element={<Chicha />} /> {/* Define la ruta */}
+          <Route path="/cementerio" element={<Cementerio />} /> 
+          <Route path="/rosquete" element={<Rosquete />} /> 
+          <Route path="/chicha" element={<Chicha />} /> 
         </Routes>
       <div className="App">
         <div>

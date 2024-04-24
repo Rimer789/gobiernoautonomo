@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
+import { Link } from "react-router-dom"; 
 import "swiper/css";
 import "./Gastronomia.css";
 import { sliderSettings } from "../../utils/common";
@@ -8,7 +8,7 @@ import { sliderSettings } from "../../utils/common";
 const places = [
   {
     name: "El CUZQUEÑO",
-    image: "./portada4.jpg",
+    image: "./proyectos/cusqueno/cuzqueno1.jpg",
     link: '/cusqueno'
   },
 ];

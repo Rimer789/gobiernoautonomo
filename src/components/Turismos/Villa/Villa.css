@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: auto; /* Añadimos desplazamiento vertical para la clase .villa */
+  overflow-y: auto; 
 }
 
 .villa-container {
@@ -18,7 +18,7 @@
   padding: 20px;
   width: 90%;
   text-align: center;
-  overflow-y: auto; /* Mantenemos el desplazamiento vertical para el contenido de .villa-container */
+  overflow-y: auto; 
 }
 
 .villa-title {

@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 const Chicha = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ["./portada1.jpg", "./portada2.jpg", "./portada3.jpg"]; // Agregamos las rutas de las imágenes
+  const images = ["./proyectos/chicha/chicha1.jpg", "./proyectos/chicha/chicha2.jpg", "./proyectos/chicha/chicha3.jpg","./proyectos/chicha/chicha4.jpg"]; 
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Cambiamos el intervalo a 3 segundos
+    }, 3000); 
 
     return () => clearInterval(interval);
   });

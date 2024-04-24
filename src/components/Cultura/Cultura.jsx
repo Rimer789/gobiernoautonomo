@@ -8,12 +8,12 @@ import { sliderSettings } from "../../utils/common";
 const places = [
   {
     name: "EL ROSQUETE",
-    image: "./portada4.jpg",
+    image: "./proyectos/rosquete/rosquete1.jpg",
     link: "/rosquete",
   },
   {
     name: "LA CHICHA PUNATEÑA",
-    image: "./portada4.jpg",
+    image: "./proyectos/chicha/chicha1.jpg",
     link: "/chicha",
   },
 ];
