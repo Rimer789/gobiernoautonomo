@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
 
-
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
@@ -30,19 +29,22 @@ const Header = () => {
         <a href="#contact-us" onClick={closeMenu}>
           Direcciones
         </a>
-        <a href="#get-started" onClick={closeMenu}>
-          Ferias
-        </a>
         <a href="#turismo" onClick={closeMenu}>
           Turismo
         </a>
-        <a href="#turismo">Cultura</a>
-        <a href="#turismo">Gastronomia</a>
+        <a href="#cultura" onClick={closeMenu}>
+          Cultura
+        </a>
+        <a href="#gastronomia" onClick={closeMenu}>
+          Gastronomia
+        </a>
+        <a href="#get-started" onClick={closeMenu}>
+          Ferias
+        </a>
       </nav>
       <div className="menu-icon" onClick={toggleMenu}>
         <BiMenuAltRight size={30} />
       </div>
-     
     </header>
   );
 };

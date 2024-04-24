@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Villa.css";
 
-const Villa = () => {
+const Rosquete = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = ["./portada1.jpg", "./portada2.jpg", "./portada3.jpg"]; // Agregamos las rutas de las imágenes
@@ -26,17 +25,18 @@ const Villa = () => {
           </div>
           <div className="villa-title">
             <h1>
-              La comunidad de la Villa es una zona turística apta para un día de
-              recreación con la familia y los amigos, donde podrás encontrar
-              molinos antiguos de agua y está ubicada en la antigua carretera
-              Santa Cruz.
+              El rosquete punateño, una de las exquisiteces del valle alto; más
+              conocido como “el manjar blanco” y declarado patrimonio cultural
+              del municipio de Punata y del Departamento de Cochabamba por la
+              calidad y producciónón artesanal mantenida en el tiempo y
+              exportada a dodos los departamentos de nuestro País.
             </h1>
           </div>
-          <Link to="/turismo">Atrás</Link>
+          <Link to="/cultura">Atrás</Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default Villa;
+export default Rosquete;

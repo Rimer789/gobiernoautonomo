@@ -13,6 +13,10 @@ import Villa from "./components/Turismos/Villa/Villa";
 import Era from "./components/Turismos/Laera/Era";
 import Sivingani from "./components/Turismos/Sivingani/Sivingani";
 import Cementerio from "./components/Turismos/Cementerio/Cementerio";
+import Gastronomia from "./components/Gatronomia/Gastronomia";
+import Cultura from "./components/Cultura/Cultura";
+import Rosquete from "./components/culturas/Rosquete/Rosquete";
+import Chicha from "./components/culturas/Chicha/Chicha";
 
 function App() {
   
@@ -24,6 +28,8 @@ function App() {
           <Route path="/era" element={<Era />} /> {/* Define la ruta */}
           <Route path="/sivingani" element={<Sivingani/>}/>
           <Route path="/cementerio" element={<Cementerio />} /> {/* Define la ruta */}
+          <Route path="/rosquete" element={<Rosquete />} /> {/* Define la ruta */}
+          <Route path="/chicha" element={<Chicha />} /> {/* Define la ruta */}
         </Routes>
       <div className="App">
         <div>
@@ -35,8 +41,9 @@ function App() {
         <Value />
         <Residencies />
         <Contact />
-        
         <Turismo />
+        <Cultura />
+        <Gastronomia />
         <GetStarted />
         <Footer />
       </div>

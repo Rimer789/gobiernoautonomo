@@ -22,6 +22,8 @@
   .r-cardt > img {
     width: 100%;
     max-width: 15rem;
+    aspect-ratio: 16/9;
+
   }
   .r-cardt > :nth-child(2) {
     font-size: 1.2rem;
