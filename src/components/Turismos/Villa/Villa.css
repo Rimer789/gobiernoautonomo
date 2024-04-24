@@ -34,6 +34,8 @@
   border-radius: 10px; /* Agregamos bordes redondeados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos una sombra suave */
   margin-bottom: 20px;
+  aspect-ratio: 16/9;
+
 }
 @media screen and (max-width: 768px) {
   .villa-title {

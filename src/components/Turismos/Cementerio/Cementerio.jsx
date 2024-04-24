@@ -20,22 +20,17 @@ const Cementerio = () => {
     <div className="villa">
       <div className="villa-container">
         <div className="villa-content">
-          
           <div className="villa-gallery">
             <img src={images[currentImageIndex]} alt="houses" />
           </div>
           <div className="villa-title">
             <h1>
-              La hacienda de Sivingani está ubicada en el distrito 4 de la
-              comunidad de Sivingani, al noreste de la ciudad de Punata, a solo
-              15minutos, cuya construcción data al año 1740. Concebida de dos
-              plantas, con un patio central y una capilla, su arquitectura es
-              esencialmente colonial. Salta a la vista el portón de medio punto,
-              como el altillo, que denotan a la arquitectura colonial. Ni hablar
-              de su capilla, ahí se resguarda la virgen de Santa Ana, además de
-              pinturas coloniales y fotografías antiguas, muchas de ellas con un
-              toque francés. En esta hacienda se filmó la película “Los Granos
-              del Sol”, bajo la dirección de Ramón Rocha Monrroy, el año 2008.
+              El cementerio general de Punata, un hermoso patrimonio de la perla
+              del valle, que aloja la memoria de nuestros antepasados punateños,
+              como el Dr. Andrés María Torrico, Dr. Manuel Ascencio Villarroel,
+              Dn. Nataniel Daza, Dn. Paulino Crespo, Dr. Rubén Ferrufino, Dr.
+              Saúl Orellana, Prof. Atilio Sucre tataranieto del Mariscal Antoni
+              José de Sucre y otros.
             </h1>
           </div>
           <Link to="/turismo">Atrás</Link>
