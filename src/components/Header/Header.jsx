@@ -20,7 +20,7 @@ const Header = () => {
       <nav className={`h-menu ${menuOpened ? "open" : ""}`}>
         {/* Utilizamos Link en lugar de <a> para la navegación */}
         <Link to="/" onClick={closeMenu}>
-          Inicio
+          INICIO
         </Link>
         <Link to="/value" onClick={closeMenu}>
           GOBIERNO MUNICIPAL

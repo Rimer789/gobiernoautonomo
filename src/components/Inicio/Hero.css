@@ -1,121 +1,77 @@
-.hero-wrapper {
-  color: white;
-  position: relative;
-  z-index: 1;
-}
+/* Hero.css */
 
+/* Estilos generales */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajustado para ocupar toda la altura de la pantalla */
+  overflow: hidden; /* Para asegurar que la imagen de fondo se muestre completamente */
+}
 
 .hero-container {
-  margin-top: 20px;
-  justify-content: space-around;
-  align-items: flex-end;
-  background-image: url('../../../public/portada4.jpg'); /* Ruta de la imagen */
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Ajustado para dispositivos móviles */
 }
 
-
-
-/* left side */
-.hero-left {
-  gap: 3rem;
-}
 
 .hero-title {
-  position: relative;
-  z-index: 1; 
-  background-color: rgba(85, 84, 84, 0.438);
-}
-.hero-descripcion {
-  position: relative;
-  z-index: 1; 
-  background-color: rgba(85, 84, 84, 0.438);
-  height: auto;
-}
-.hero-descripcion > h2 {
-  margin-top: 10%;
-  font-weight: 100;
-  font-size: 1rem;
-  line-height: 4rem;
-}
-.hero-title > h1 {
-  margin-top: 10%;
-  font-weight: 600;
-  font-size: 3.8rem;
-  line-height: 4rem;
-}
-.orange-circle {
-  height: 4rem;
-  width: 4rem;
-  background: var(--orange-gradient);
-  border-radius: 999px;
-  position: absolute;
-  right: 28%;
-  top: -10%;
-  z-index: -1;
-}
-.search-bar {
-  background-color: white;
-  border-radius: 5px;
-  border: 3px solid rgba(120, 120, 120, 0.374);
-  padding: 0.5rem 1rem;
-  width: 100%;
-  justify-content: space-between;
-}
-.search-bar > input {
-  border: none;
-  outline: none;
-}
-.stats{
-    width: 100%;
-    justify-content: space-between;
-}
-.stat>:nth-child(1)
-{
-    font-size: 2rem;
-}
-.stat>:nth-child(1)>:last-child{
-    color: orange;
-}
-/* right side */
-
-.image-container {
-  width: 30rem;
-  height: 35rem;
-  overflow: hidden;
-  border: 8px solid rgba(4, 65, 2, 0.993);
-}
-.image-container>img{
-    width: 100%;
-    height: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px; 
+  color: rgb(10, 80, 3);
+  background-color: rgba(187, 180, 180, 0.603);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  animation: slideIn 5s ease infinite; 
+  text-align: center;
 }
 
-/* mobile screens */
-@media  (max-width: 640px){
+
+.descripcion-inicio {
+  margin-left: 10%;
+  font-size: 1.5rem;
+  color: aliceblue;
+  font-weight: bold;
+  margin-bottom: 20px; 
+  background-color: rgba(187, 180, 180, 0.603);
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* Media queries para vista de celular */
+/* Media queries para vista de celular */
+@media (max-width: 768px) {
   .hero-container {
-    justify-content: space-around;
-    align-items: flex-end; 
-    background-image: none; /* Eliminar la imagen de fondo */
-    background-color:  #092e12;
+    flex-direction: column; /* Cambiar a columna en dispositivos móviles */
+    align-items: center; /* Alinear elementos horizontalmente en el centro */
+    text-align: center; /* Centrar texto */
   }
-  .hero-title>h1{
-    font-size: 2.5rem;
-    line-height: 3rem;
+  .hero-title {
+    font-size: 2rem; /* Reducir el tamaño del título para dispositivos móviles */
+    margin-bottom: 10px; /* Reducir el margen inferior */
+    padding: 10px; /* Reducir el relleno del título */
   }
-  .image-container{
-    width: 95%;
-    height: 25rem;
-  }
-  .stats{
-    justify-content: center;
-    gap: 1.5rem;
-    font-weight: wrap;
-  }
-  .stat>:nth-child(1){
-    font-size: 1.5rem;
-  }
-  .stat>:nth-child(2)
-  {
-    font-size: 0.8rem;
+
+  .descripcion-inicio {
+    font-size: 1.2rem; /* Reducir el tamaño del texto para dispositivos móviles */
+    margin-top: 10px; /* Ajustar margen superior */
   }
 }

@@ -1,57 +1,63 @@
-import "./Hero.css";
-import { motion } from "framer-motion";
-const Hero = () => {
-  return (
-    <section id="hero" className="hero-wrapper">
-      <div className="paddings innerWidth g-container">
-        <div className="paddings innerWidth flexCenter hero-container">
-          <div className="flexColStart hero-left">
-            <div className="hero-title">
-              <motion.h1
-                initial={{ y: "2rem", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 2,
-                  type: "ease-in",
-                }}
-              >
-                GOBIERNO AUTONOMO <br />
-                MUNICIPAL DE
-                <br /> PUNATA
-                <br />
-                <br />
-                <br />
-              </motion.h1>
-            </div>
-            <div className="flexColStart secondaryText flexhero-des">
-              <span>
-                El Municipio de Punata fue fundado el 18 de mayo de 1838,
-                mediante Decreto Supremo
-              </span>
-              <span>
-                promulgado en el gobierno del Mariscal Andrés de Santa Cruz
-              </span>
-              <br />
-              <br />
-            </div>
-          </div>
+import React, { useState, useEffect } from "react";
+import { FaFacebookF, FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
 
-          {/* right side */}
-          <div className="flexCenter hero-right">
-            <motion.div
-              initial={{ x: "7rem", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{
-                duration: 2,
-                type: "ease-in",
-              }}
-              className="image-container"
-            >
-              <img src="./portada5.jpg" alt="houses" />
-            </motion.div>
-          </div>
+import "./Hero.css";
+import background1 from "../../imagenes/portada1.jpg";
+import background2 from "../../imagenes/portada2.jpg";
+import background3 from "../../imagenes/portada3.jpg";
+import background4 from "../../imagenes/portada4.jpg";
+import background5 from "../../imagenes/portada5.jpg";
+import background7 from "../../imagenes/portada7.jpg";
+
+const Hero = () => {
+  const [backgroundImage, setBackgroundImage] = useState(0);
+  const [descriptions, setDescriptions] = useState([
+    "Ciclo via en la avenida gualberto villarroel",
+    "Arco de bienbenida a municipio de punata",
+    "Estatuas de madera en el parque",
+    "Plaza 18 de mayo",
+    "Tmplo san juan bautista",
+    "Centro de la plaza 18 de mayo ",
+  ]);
+
+  // Array con las imágenes de fondo
+  const backgrounds = [
+    background1,
+    background2,
+    background3,
+    background4,
+    background5,
+    background7,
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBackgroundImage((prevIndex) => (prevIndex + 1) % backgrounds.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  });
+
+  return (
+    <section
+      id="hero"
+      className="hero-wrapper"
+      style={{
+        backgroundImage: `url(${backgrounds[backgroundImage]})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="hero-container">
+        <div className="hero-title">
+          GOBIERNO AUTÓNOMO <br /> MUNICIPAL DE PUNATA
+        </div>
+        <div className="descripcion-inicio">
+          {descriptions[backgroundImage]}
         </div>
       </div>
+      
+      
     </section>
   );
 };
