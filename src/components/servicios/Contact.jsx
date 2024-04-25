@@ -57,7 +57,6 @@ const Contact = () => {
                      {card.director}
                   </span>
                   <span className="">
-                     {card.ref}
                   </span>
                   <span className="">
                      {card.nivel}
