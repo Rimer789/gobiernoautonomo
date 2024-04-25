@@ -1,91 +1,67 @@
-import React, { useState, useEffect } from "react";
-import "react-accessible-accordion/dist/fancy-example.css";
+import React from "react";
+import { FaFacebookF, FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./Value.css";
 
 const Value = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-    "./portada1.jpg",
-    "./portada2.jpg",
-    "./portada3.jpg",
-    "./portada4.jpg",
-    "./portada6.jpg",
-    "./portada7.jpg",
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
-    <section id="value" className="v-wrappera">
-      <div className="paddings innerWidth g-container">
-        <div className="paddings innerWidth flexCenter v-container">
-          <div className="v-left">
-            <div className="image-container">
-              <img src={images[currentImageIndex]} alt="" />
-            </div>
-          </div>
-
-          <div className="flexColStart v-right">
-            <br />
-            <br />
-            <span className="secondaryText">
-              <span className="bold-subtitle">MUNICIPIO:</span> Punata <br />
-              <span className="bold-subtitle">CARACTERÍSTICA:</span> La Perla
-              del Valle <br />
-              <span className="bold-subtitle">FUNDACIÓN:</span> 4 de enero 1972{" "}
-              <br />
-              <span className="bold-subtitle">ANIVERSARIO:</span> 18 de mayo{" "}
-              <br />
-              <span className="bold-subtitle">CLIMA:</span> Templado DISTANCIA:
-              50 km. PARADA: Av. República frente al Templo San Carlos <br />
-              <span className="bold-subtitle">EXTENSIÓN:</span> 178,17 km2 FERIA
-              SEMANAL: Martes FERIAS: Feria de la Chicha y el Rosquete (2ª
-              semana de mayo) <br />
-              <span className="bold-subtitle">FESTIVIDAD:</span> Señor de los
-              Milagros (22 al 24 de septiembre) <br />
-              Punata tiene principalmente producción agrícola. Los cultivos más
-              importantes son el trigo, papa, avena, maíz, arveja, frutales como
-              durazno, pera, manzana, ciruela, frutillas etc. La actividad
-              agrícola de Punata es reconocida por la producción de peras,
-              duraznos y otras frutas en huertos frutales. También se producen
-              hortalizas y pasturas mejoradas de alto rendimiento, como la
-              alfalfa. En las partes altas se cultiva variedades de papa, la
-              papaliza, la oca, trigo y maíz.
-            </span>
-            <br />
-            <br />
-
-            {/* <Accordion
-            className="accordion"
-            allowMultipleExpanded={false}
-            preExpanded={[0]}
-          >
-            {data.map((item, i) => (
-              <AccordionItem className="accordionItem" uuid={i} key={i}>
-                <AccordionItemHeading>
-                  <AccordionItemButton className="flexCenter accordionButton ">
-                    <div className="flexCenter icon">{item.icon}</div>
-                    <span className="primaryText">{item.heading}</span>
-                    <div className="flexCenter icon">
-                      <MdOutlineArrowDropDown size={20} />
-                    </div>
-                  </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p className="secondaryText">{item.detail}</p>
-                </AccordionItemPanel>
-              </AccordionItem>
-            ))}
-          </Accordion> */}
-          </div>
+    <section id="value" className="v-wrapper">
+      <div className="v-container">
+        <div className="text-container">
+          <div className="text-large">Gobierno municipal</div>
+          <div className="text-small">Alcaldía de Punata</div>
+        </div>
+      </div>
+      <div className="v-container2">
+        <div className="alcalde-container">
+          <div className="alcalde-title">Nuestro Alcalde</div>
+          <img
+            src="./portada3.jpg"
+            alt="Foto del alcalde"
+            className="alcalde-img"
+          />
+          <div className="alcalde-name">Nombre del Alcalde</div>
+        </div>
+        <div className="redes-sociales">
+          <a href="link-de-facebook" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
+          </a>
+          <a href="link-de-instagram" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a href="link-de-twitter" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
+          <a href="link-de-tiktok" target="_blank" rel="noopener noreferrer">
+            <FaTiktok />
+          </a>
+        </div>
+      </div>
+      <div className="v-container3">
+        <div className="escudo-container">
+          <img
+            src="./portada5.jpg"
+            alt="Foto del alcalde"
+            className="escudo-img"
+          />
+        </div>
+        <div className="mision">Mision</div>
+        <div className="descr-mision">
+          Satisfacer las necesidades y aspiraciones de desarrollo de la
+          población del municipio de Punata, direccionando los servicios
+          públicos municipales hacia la mejora de su calidad de vida, en un
+          contexto de transparencia, eficacia, eficiencia, calidad y
+          oportunidad.{" "}
+        </div>
+        <div className="vision">Vision</div>
+        <div className="descr-vision">
+          Convertir a Punata en un hogar seguro, próspero, limpio y competitivo,
+          articulando eficientemente el trabajo del Gobierno Autónomo Municipal
+          y la sociedad punateña. Ser un municipio atractivo para las
+          inversiones, con una infraestructura en armonía con la naturaleza, y
+          una población integrada e identificada con su municipio. Establecer un
+          entorno organizacional humano eficaz y transparente, donde la
+          participación ciudadana sea fundamental para el desarrollo sostenible
+          y la prosperidad de Punata.
         </div>
       </div>
     </section>

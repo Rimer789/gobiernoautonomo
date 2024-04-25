@@ -1,84 +1,203 @@
-.v-container .image-container {
-  border: 8px solid rgb(232 232 232 / 93%);
-  width: 90%;
-  height: 90%;
-  aspect-ratio: 16/9;
+/* Value.css */
+
+.v-wrapper {
+  width: 100%;
+  height: 120vh; /* Aumentado el tamaño para que se vea más grande */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.v-container > div {
-  flex: 1;
-}
-.v-container  {
-  margin-top: 20px;
-  justify-content: space-around;
-  align-items: flex-end;
+
+.v-container {
   background-image: url('../../../public/portada7.jpg'); 
   background-size: cover; 
   background-position: center; 
-}
-
-
-.bold-subtitle {
-  font-weight: bold;
-  color: black;
-}
-
-.v-wrappera {
-  color: white;
-  position: relative;
-  z-index: 1;
-}
-.v-right {
-  gap: 0.5rem;
-}
-.accordion {
-  margin-top: 2rem;
-  border: none;
-}
-.accordionItem {
-  background: white;
-  border: 0.8px solid rgba(128, 128, 128, 0.143);
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.accordionItem.expanded {
-  box-shadow: var(--shadow);
-  border-radius: 6px;
-}
-.accordionButton {
-  background: white;
-  padding: 1rem;
   width: 100%;
-  justify-content: space-between;
-  cursor: pointer;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon {
-  padding: 10px;
-  background: #eeeeff;
-  border-radius: 5px;
+.v-container2 {
+  background-color: #0b7a0b;
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
-.icon svg {
-  fill: var(--blue);
+.v-container3 {
+  background-color: rgb(255, 255, 255);
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.accordionButton .primaryText{
-    font-size: 1.1rem;
+
+.alcalde-container {
+  text-align: center;
+}
+.escudo-container {
+  text-align: center;
 }
 
-@media (max-width: 1024px) {
-    .v-container{
-        flex-direction: column;
-    }
+.alcalde-img {
+  border-radius: 50%; 
+  width: 400px; 
+  height: 400px;
+  object-fit: cover; 
+  margin-bottom: 10px;
+  border: 10px double aliceblue;
+}
+.escudo-img {
+  border-radius: 50%; 
+  width: 400px; 
+  height: 400px;
+  object-fit: cover; 
+  margin-bottom: 10px;
+  border: 10px double aliceblue;
+}
+
+.alcalde-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+.alcalde-title {
+  color: aliceblue;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes-sociales a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #000; /* Cambiar color al pasar el cursor */
+}
+
+.text-container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px; 
+  padding: 30px; 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.719); 
+  display: inline-block;
+  text-align: center;
+  animation: slideIn 5s ease infinite; 
+}
+
+.text-large {
+  font-size: 40px; 
+  font-weight: bold; 
+  margin-bottom: 15px; 
+}
+
+.text-small {
+  font-size: 28px; 
+  color: #666; 
+}
+.mision,
+.vision {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0b7a0b;
+}
+
+.descr-mision,
+.descr-vision {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px); /* Comienza fuera de la pantalla */
+    opacity: 0; /* Inicialmente transparente */
+  }
+  50% {
+    opacity: 1; /* Aparece */
+  }
+  100% {
+    transform: translateY(0); /* Se desliza hacia arriba */
+    opacity: 1; /* Totalmente visible */
+  }
 }
 
 @media (max-width: 768px) {
-    .accordionButton .primaryText{
-        font-size: .8rem;
-    }
-    .v-wrappera {
-      background-image: none; 
-      background-color: #092e12; 
-    }
+  .v-wrapper {
+    margin-top: 0; 
+  }
+  .text-large {
+    font-size: 32px; /* Aumento del tamaño del texto grande para dispositivos móviles */
+    margin-bottom: 8px; /* Espaciado inferior */
+  }
+
+  .text-small {
+    font-size: 20px; /* Aumento del tamaño del texto pequeño para dispositivos móviles */
+  }
+
+  .text-container {
+    padding: 15px; /* Espaciado interior para dispositivos móviles */
+  }
+
+  .alcalde-img {
+    width: 300px; /* Ajuste del tamaño de la imagen para dispositivos móviles */
+    height: 300px;
+    margin-bottom: 10px;
+    border: 5px double aliceblue; /* Ajuste del borde para dispositivos móviles */
+  }
+  .escudo-img {
+    width: 300px; /* Ajuste del tamaño de la imagen para dispositivos móviles */
+    height: 300px;
+    margin-bottom: 10px;
+    border: 5px double aliceblue; /* Ajuste del borde para dispositivos móviles */
+  }
+
+  .alcalde-name {
+    font-size: 28px; /* Ajuste del tamaño del nombre del alcalde para dispositivos móviles */
+    margin-bottom: 10px;
+    color: aliceblue;
+  }
+
+  .alcalde-title {
+    font-size: 32px; /* Ajuste del tamaño del título del alcalde para dispositivos móviles */
+    margin-bottom: 10px;
+    color: aliceblue;
+  }
+  .descr-mision,
+  .descr-vision {
+     font-size: 15px;
+     margin-bottom: 20px;
+     text-align: justify;
+     margin-left: 0px;
+     margin-right: 0px;
+}
 }

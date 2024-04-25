@@ -5,9 +5,8 @@
   width: 100%;
   background-color: #beb2b200;
   z-index: 1000;
+  margin-top: 0;
 }
-
-
 
 .h-container {
   padding-top: 1rem;
@@ -19,22 +18,23 @@
 }
 
 .h-menu {
-  display: flex;
-  justify-content: flex-end; /* Alinear elementos del menú a la derecha en PC */
-  align-items: flex-end; /* Alinear elementos del menú a la derecha en PC */
+  position: absolute; /* Posición absoluta para colocar el menú debajo del encabezado */
+  top: 100%; /* Comienza desde la parte inferior del encabezado */
+  left: 0;
+  width: 100%;
   background-color: rgb(4, 63, 17);
+  display: flex;
+  justify-content: space-around; /* Centrar los elementos del menú */
+  align-items: center; /* Centrar los elementos del menú */
+  padding: 10px 0; /* Añadir espacio interno al menú */
 }
 
+/* Ajustes para los enlaces del menú */
 .h-menu a {
-  margin-left: 20px; /* Añadir espaciado entre elementos del menú en PC */
-  margin-top: 10px;
-  margin-bottom: 10px; /* Añadir espaciado entre elementos del menú en móvil */
-  width: calc(25% - 20px); /* Establece el ancho al 100% para que todas las secciones tengan el mismo ancho */
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding: 5px 10px;
+  margin: 0; /* Eliminar el margen para los enlaces del menú */
+  padding: 10px 20px; /* Ajustar el espaciado interno de los enlaces */
   color: #ffffff;
-  text-align: center; /* Centra el texto dentro de las secciones */
+  text-decoration: none;
 }
 
 .h-menu > *:last-child {

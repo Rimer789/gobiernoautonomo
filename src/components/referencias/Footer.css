@@ -1,119 +1,69 @@
+/* Footer.css */
 
-.f-left{
-    gap: 1rem;
-}
-.f-menu{
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-    font-weight: 500;
-}
 .f-wrapper {
-    background-color: #f7f7f7;
-  }
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  transition: bottom 0.3s ease; /* Agregar una transición suave */
+}
 
-  .f-left img {
-    margin-bottom: 10px;
+
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footerText {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.f-menu {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.iconn {
+  font-size: 28px; /* Ajustar el tamaño de los iconos */
+  margin: 0 10px; /* Añadir margen entre los iconos */
+}
+
+.iconn:hover {
+  color: #061e50; /* Cambiar el color cuando el cursor pase por encima */
+}
+
+.primaryTexto {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    justify-content: center;
   }
-  
+  .f-container > div {
+    align-items: center !important;
+    text-align: center;
+  }
+  .f-right {
+    justify-content: center;
+  }
+  .iconn {
+    font-size: 20px; /* Ajustar el tamaño de los iconos */
+    margin: 0; /* Añadir margen entre los iconos */
+  }
   .secondaryText {
-    font-size: 18px;
+    font-size: 15px;
     color: #ffffff;
     line-height: 1.5;
-    background-color: #a39f9fa1;
+    background-color: #a39f9fd2;
     padding: 10px;
     border-radius: 10px;
   }
-  
-  .primaryText {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .f-menu {
-    margin-top: 10px;
-  }
-  
-  .f-menu span {
-    margin-right: 20px;
-    cursor: pointer;
-  }
-  .f-wrapper {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .f-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .flexColStart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .primaryText {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .primaryTexto {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #f7f7f7;
-  }
-  .flexColEnd {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .footerText {
-    font-size: 12px;
-    color: #888;
-    margin-top: 5px;
-  }
-  
-  .f-menu {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-  }
-  
-  .iconn {
-    font-size: 28px; /* Ajustar el tamaño de los iconos */
-    margin: 0 10px; /* Añadir margen entre los iconos */
-  }
-  .iconn:hover {
-    color: #061e50; /* Cambiar el color cuando el cursor pase por encima */
-  }
-  
-  /* Add any additional styles as needed */
-  
-@media (max-width: 768px) {
-    .f-container{
-        justify-content: center;
-    }
-    .f-container>div{
-        align-items: center!important;
-        text-align: center;
-    }
-    .f-right{
-        justify-content: center;
-    }
-    .iconn {
-      font-size: 20px; /* Ajustar el tamaño de los iconos */
-      margin: 0; /* Añadir margen entre los iconos */
-    }
-    .secondaryText {
-      font-size: 15px;
-      color: #ffffff;
-      line-height: 1.5;
-      background-color: #a39f9fd2;
-      padding: 10px;
-      border-radius: 10px;
-    }
 }

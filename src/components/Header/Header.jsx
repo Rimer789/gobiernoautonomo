@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Importamos Link desde react-router-dom
 import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
 
@@ -17,30 +18,31 @@ const Header = () => {
     <header className={`h-wrapper ${menuOpened ? "menu-open" : ""}`}>
       {/* menu */}
       <nav className={`h-menu ${menuOpened ? "open" : ""}`}>
-        <a href="#hero" onClick={closeMenu}>
+        {/* Utilizamos Link en lugar de <a> para la navegación */}
+        <Link to="/" onClick={closeMenu}>
           Inicio
-        </a>
-        <a href="#value" onClick={closeMenu}>
-          Informacion{" "}
-        </a>
-        <a href="#residencies" onClick={closeMenu}>
+        </Link>
+        <Link to="/value" onClick={closeMenu}>
+          GOBIERNO MUNICIPAL
+        </Link>
+        <Link to="/residencies" onClick={closeMenu}>
           Proyectos
-        </a>
-        <a href="#contact-us" onClick={closeMenu}>
+        </Link>
+        <Link to="/contact" onClick={closeMenu}>
           Direcciones
-        </a>
-        <a href="#turismo" onClick={closeMenu}>
+        </Link>
+        <Link to="/turismo" onClick={closeMenu}>
           Turismo
-        </a>
-        <a href="#cultura" onClick={closeMenu}>
+        </Link>
+        <Link to="/cultura" onClick={closeMenu}>
           Cultura
-        </a>
-        <a href="#gastronomia" onClick={closeMenu}>
+        </Link>
+        <Link to="/gastronomia" onClick={closeMenu}>
           Gastronomia
-        </a>
-        <a href="#get-started" onClick={closeMenu}>
+        </Link>
+        <Link to="/get-started" onClick={closeMenu}>
           Ferias
-        </a>
+        </Link>
       </nav>
       <div className="menu-icon" onClick={toggleMenu}>
         <BiMenuAltRight size={30} />
@@ -50,3 +52,4 @@ const Header = () => {
 };
 
 export default Header;
+
