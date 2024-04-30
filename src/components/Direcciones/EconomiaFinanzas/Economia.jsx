@@ -49,7 +49,7 @@ const Economia = () => {
           colaboración con otros departamentos municipales para garantizar una
           gestión integrada y eficiente de los recursos en áreas como
           planificación urbana, servicios públicos y desarrollo comunitario.{" "}
-          <br /> <br />
+          <br /> <br />º
           <strong>Cumplimiento normativo y reportes:</strong> Asegura el
           cumplimiento de las regulaciones financieras y contables aplicables y
           proporciona informes financieros precisos y oportunos a las

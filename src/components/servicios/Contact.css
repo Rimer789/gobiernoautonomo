@@ -8,6 +8,29 @@
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
 }
+.d-container {
+  background-image: url('../../../public/portada7.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-container2 {
+  background-color: #0b7a0b;
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 .r-cards {
   gap: 0.6rem;
   padding: 1rem;

@@ -32,9 +32,8 @@ const Contact = () => {
     }
   };
   return (
-    <div id="contact-us" className="c-wrapper">
-      <div className="paddings innerWidth g-container">
-        <div className="paddings innerWidth s-container">
+    <div id="contact-us" className="v-wrapper">
+      <div className="d-container2">
           <div className="flexColStart r-head">
             <span className="orangeText">ORGANIGRAMA 2024 GAM PUNATA </span>
           </div>
@@ -53,11 +52,9 @@ const Contact = () => {
                 width: `${zoom}%`
               }}
             />
-          </div>
         </div>
       </div>
       <div className="paddings innerWidth g-container">
-        <div className="paddings innerWidth s-container">
           <div className="flexColStart r-head">
             <span className="orangeText">DIRECCIONES MUNICIPALES </span>
           </div>
@@ -77,7 +74,6 @@ const Contact = () => {
             ))}
           </Swiper>
           
-        </div>
       </div>
       <div className="paddings innerWidth g-container">
         <div className="paddings innerWidth s-container">
