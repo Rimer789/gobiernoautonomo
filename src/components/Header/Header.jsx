@@ -25,11 +25,9 @@ const Header = () => {
         <Link to="/value" onClick={closeMenu}>
           GOBIERNO MUNICIPAL
         </Link>
-        <Link to="/residencies" onClick={closeMenu}>
-          Proyectos
-        </Link>
+        
         <Link to="/contact" onClick={closeMenu}>
-          Direcciones
+          DIRECCIONES MUNICIPALES
         </Link>
         <Link to="/turismo" onClick={closeMenu}>
           Turismo

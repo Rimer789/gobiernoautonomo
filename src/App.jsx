@@ -17,6 +17,7 @@ import Gastronomia from "./components/Gatronomia/Gastronomia";
 import Cultura from "./components/Cultura/Cultura";
 import Rosquete from "./components/culturas/Rosquete/Rosquete";
 import Chicha from "./components/culturas/Chicha/Chicha";
+import Economia from "./components/Direcciones/EconomiaFinanzas/Economia";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/cementerio" element={<Cementerio />} />
             <Route path="/rosquete" element={<Rosquete />} />
             <Route path="/chicha" element={<Chicha />} />
+            <Route path="/economia" element={<Economia />} />
           </Routes>
         </main>
       </div>

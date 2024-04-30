@@ -1,0 +1,81 @@
+.e-container {
+    background-image: url('../../../../public/economia.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-containere {
+    background-color: rgba(255, 255, 255, 0.432); 
+    border-radius: 10px; 
+    padding: 30px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.719); 
+    display: inline-block;
+    text-align: center;
+    animation: slideIn 5s ease infinite; 
+  }
+  .text-containeree {
+    background-color: rgba(255, 255, 255, 0.432); 
+    border-radius: 10px; 
+    padding: 30px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.719); 
+    display: inline-block;
+    text-align: center;
+    width: 40%; 
+    margin-left: 5%;
+  }
+  .text-large {
+    font-size: 60px; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+    color: #015f06;
+  }
+  .descre-mision,
+.descre-vision {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+
+}
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px); /* Comienza fuera de la pantalla */
+      opacity: 0; /* Inicialmente transparente */
+    }
+    50% {
+      opacity: 1; /* Aparece */
+    }
+    100% {
+      transform: translateY(0); /* Se desliza hacia arriba */
+      opacity: 1; /* Totalmente visible */
+    }
+  }
+  @media (max-width: 768px) {
+    .v-wrapper {
+      margin-top: 0; 
+    }
+    .text-large {
+      font-size: 32px; /* Aumento del tamaño del texto grande para dispositivos móviles */
+      margin-bottom: 8px; /* Espaciado inferior */
+    }
+    .e-container {
+        display: flow-root;
+      }
+    .text-containere,
+  .text-containeree {
+    display: block; /* Cambia la visualización a bloque en dispositivos móviles */
+    width: auto; /* Restaura el ancho automático */
+    margin-left: auto; /* Restaura el margen izquierdo automático */
+    margin-right: auto; /* Restaura el margen derecho automático */
+    margin-bottom: 20px; /* Espaciado inferior entre los elementos */
+    padding: 15px; /* Espaciado interior para dispositivos móviles */
+  }
+  
+
+   
+  }
+  
