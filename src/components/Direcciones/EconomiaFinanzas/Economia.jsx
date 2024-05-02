@@ -1,10 +1,12 @@
 import React from "react";
 import { FaFacebookF, FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./eco.css";
 
 const Economia = () => {
   return (
     <section id="value" className="v-wrapper">
+     <button className="boton-flotante"><Link to="/contact"> atras</Link></button>
       <div className="e-container">
         <div className="text-containere">
           <div className="text-large">
@@ -19,10 +21,16 @@ const Economia = () => {
             administrativos relacionados con las finanzas públicas. Sus
             funciones incluyen:{" "}
           </div>
+          <div className="contacto">
+            <p className="titulo">Teléfono:</p>
+            <p className="contenido">********</p>
+            <p className="titulo">Dirección:</p>
+            <p className="contenido">*************************</p>
+          </div>
         </div>
       </div>
 
-      <div className="v-container3">
+      <div className="eco-container">
         <div className="descr-mision">
           <strong>Elaboración y gestión del presupuesto:</strong> Responsable de
           la elaboración del presupuesto municipal, identificando los ingresos
@@ -49,11 +57,10 @@ const Economia = () => {
           colaboración con otros departamentos municipales para garantizar una
           gestión integrada y eficiente de los recursos en áreas como
           planificación urbana, servicios públicos y desarrollo comunitario.{" "}
-          <br /> <br />º
-          <strong>Cumplimiento normativo y reportes:</strong> Asegura el
-          cumplimiento de las regulaciones financieras y contables aplicables y
-          proporciona informes financieros precisos y oportunos a las
-          autoridades correspondientes y al público en general.
+          <br /> <br />º<strong>Cumplimiento normativo y reportes:</strong>{" "}
+          Asegura el cumplimiento de las regulaciones financieras y contables
+          aplicables y proporciona informes financieros precisos y oportunos a
+          las autoridades correspondientes y al público en general.
         </div>
       </div>
       <div className="f-wrapper">
