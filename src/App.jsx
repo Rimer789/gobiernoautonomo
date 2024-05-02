@@ -18,6 +18,12 @@ import Cultura from "./components/Cultura/Cultura";
 import Rosquete from "./components/culturas/Rosquete/Rosquete";
 import Chicha from "./components/culturas/Chicha/Chicha";
 import Economia from "./components/Direcciones/EconomiaFinanzas/Economia";
+import IngresoMunicipal from "./components/Direcciones/IngresosMunicipales/IngresosMunicipales";
+import UrbanismoCatastro from "./components/Direcciones/UrbanismoCatastro/UrbanismoCatastro";
+import ObrasPublicas from "./components/Direcciones/ObrasPublicas/ObrasPublicas";
+import Planificacion from "./components/Direcciones/Planificacion/Planificacion";
+import MedioAmbiente from "./components/Direcciones/ProductivoMedioAmbiente/ProductivoMedioAmbiente";
+import DesarrolloHumano from "./components/Direcciones/DesarrolloHumano/Humano";
 
 function App() {
   return (
@@ -42,6 +48,12 @@ function App() {
             <Route path="/rosquete" element={<Rosquete />} />
             <Route path="/chicha" element={<Chicha />} />
             <Route path="/economia" element={<Economia />} />
+            <Route path="/ingresosmunicipales" element={<IngresoMunicipal />} />
+            <Route path="/urbanismocatastro" element={<UrbanismoCatastro/>} />
+            <Route path="/obraspuplicas" element={<ObrasPublicas/>} />
+            <Route path="/planificacion" element={<Planificacion/>} />
+            <Route path="/productivomedioambiente" element={<MedioAmbiente/>} />
+            <Route path="/desarrollohumano" element={<DesarrolloHumano/>} />
           </Routes>
         </main>
       </div>

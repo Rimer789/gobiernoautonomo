@@ -1,16 +1,15 @@
 import React from "react";
 import { FaFacebookF, FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "./eco.css";
 
-const Economia = () => {
+const Planificacion = () => {
   return (
     <section id="value" className="v-wrapper">
      <button className="boton-flotante"><Link to="/contact"> atras</Link></button>
-      <div className="e-container">
+      <div className="dp-container">
         <div className="text-containere">
           <div className="text-large">
-            Direccion de <br /> ECONOMIA Y FINANZAS
+            Direccion de <br /> PLANIFICACION
           </div>
         </div>
         <div className="text-containeree">
@@ -104,4 +103,4 @@ const Economia = () => {
   );
 };
 
-export default Economia;
+export default Planificacion;

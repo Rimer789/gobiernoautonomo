@@ -9,10 +9,76 @@
     justify-content: center;
     align-items: center;
   }
+  .im-container {
+    background-image: url('../../../../public/ingresos.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .uc-container {
+    background-image: url('../../../../public/catastro.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .op-container {
+    background-image: url('../../../../public/obraspublicas.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dp-container {
+    background-image: url('../../../../public/planificacion.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ma-container {
+    background-image: url('../../../../public/medioambiente.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dh-container {
+    background-image: url('../../../../public/desarrollohumano.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .text-containere {
     background-color: rgba(255, 255, 255, 0.432); 
     border-radius: 10px; 
-    padding: 30px; 
+    padding: 10px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.719); 
     display: inline-block;
     text-align: center;

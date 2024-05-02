@@ -8,31 +8,37 @@
   {
     "name": "DIRECCION DE INGRESOS MUNICIPALES",
     "icon": "FaBalanceScale",
-    "detail": "detalles"
+    "detail": "detalles",
+    "link": "/ingresosmunicipales"
   },
   {
     "name": "DIRECCION DE URBANISMO Y CATASTRO",
     "icon": "FaCity",
+    "link": "/urbanismocatastro",
     "detail": "detalles"
   },
   {
     "name": "DIRECCION DE OBRAS PUBLICAS",
     "icon": "FaTools",
+    "link": "/obraspuplicas",
     "detail": "detalles"
   },
   {
     "name": "DIRECCION DE PLANIFICACION",
     "icon": "FaClipboardList",
+    "link": "/planificacion",
     "detail": "detalles"
   },
   {
     "name": "DIRECCION DE DESARROLLO PRODUCTIVO Y MEDIO AMBIENTE",
     "icon": "FaLeaf",
+    "link": "/productivomedioambiente",
     "detail": "detalles"
   },
   {
     "name": "DIRECCION DE DESARROLLO HUMANO",
     "icon": "FaUser",
-    "detail": "detalles"
+    "link": "/desarrollohumano",
+    "detail": "desarrollohumano"
   }
 ]
