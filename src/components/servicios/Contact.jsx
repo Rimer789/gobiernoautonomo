@@ -75,34 +75,6 @@ const Contact = () => {
           </Swiper>
           
       </div>
-      <div className="paddings innerWidth g-container">
-        <div className="paddings innerWidth s-container">
-          <div className="flexColStart r-head">
-            <span className="orangeText">UNIDADES EDUCATIVAS  </span>
-          </div>
-          <Swiper {...sliderSettings}>
-            <SlideNextButton />
-            {datos.map((card, i) => (
-              <SwiperSlide key={i} >
-                <div className="flexColStart r-cardss">
-                  <span className="">
-                     {card.unidad}
-                  </span>
-                  <span className="">
-                     {card.director}
-                  </span>
-                  <span className="">
-                  </span>
-                  <span className="">
-                     {card.nivel}
-                  </span>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          
-        </div>
-      </div>
     </div>
   );
 };
