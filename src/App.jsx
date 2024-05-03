@@ -49,13 +49,17 @@ function App() {
             <Route path="/chicha" element={<Chicha />} />
             <Route path="/economia" element={<Economia />} />
             <Route path="/ingresosmunicipales" element={<IngresoMunicipal />} />
-            <Route path="/urbanismocatastro" element={<UrbanismoCatastro/>} />
-            <Route path="/obraspuplicas" element={<ObrasPublicas/>} />
-            <Route path="/planificacion" element={<Planificacion/>} />
-            <Route path="/productivomedioambiente" element={<MedioAmbiente/>} />
-            <Route path="/desarrollohumano" element={<DesarrolloHumano/>} />
+            <Route path="/urbanismocatastro" element={<UrbanismoCatastro />} />
+            <Route path="/obraspuplicas" element={<ObrasPublicas />} />
+            <Route path="/planificacion" element={<Planificacion />} />
+            <Route
+              path="/productivomedioambiente"
+              element={<MedioAmbiente />}
+            />
+            <Route path="/desarrollohumano" element={<DesarrolloHumano />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

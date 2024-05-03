@@ -38,6 +38,19 @@ const places = [
   },
 ];
 
+const cultura = [
+  {
+    name: "EL ROSQUETE",
+    image: "./proyectos/rosquete/rosquete1.jpg",
+    link: "/rosquete",
+  },
+  {
+    name: "LA CHICHA PUNATEÑA",
+    image: "./proyectos/chicha/chicha1.jpg",
+    link: "/chicha",
+  },
+];
+
 const Turismo = () => {
   return (
     <div id="turismo" className="r-wrapper">
@@ -54,6 +67,26 @@ const Turismo = () => {
                   <div className="flexColStart r-cardt">
                     <img src={place.image} alt={place.name} />
                     <span className="primaryTextt">{place.name}</span>
+                  </div>
+                </Link>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+      <div className="paddings innerWidth g-container">
+        <div className="paddings innerWidth t-container">
+          <div className="flexColStart r-head">
+            <span className="orangeText">CULTURA PUNATEÑA</span>
+          </div>
+          <Swiper {...sliderSettings}>
+            <SlideNextButton />
+            {cultura.map((cultur, index) => (
+              <SwiperSlide key={index}>
+                <Link to={cultur.link}>
+                  <div className="flexColStart r-cardc">
+                    <img src={cultur.image} alt={cultur.name} />
+                    <span className="primaryTextt">{cultur.name}</span>
                   </div>
                 </Link>
               </SwiperSlide>

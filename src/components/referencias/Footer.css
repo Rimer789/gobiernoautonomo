@@ -1,47 +1,115 @@
-/* Footer.css */
-
 .f-wrapper {
   width: 100%;
-  background-color: #333;
+  background-color: #2c3e50; /* Cambio a un fondo verde oscuro */
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  transition: bottom 0.3s ease; /* Agregar una transición suave */
+  transition: bottom 0.3s ease;
 }
-
 
 .flexColEnd {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start; /* Cambio a alinear a la izquierda */
 }
 
 .footerText {
-  font-size: 12px;
-  color: #888;
+  font-size: 14px; /* Aumento del tamaño de las letras */
+  color: #bbb; /* Cambio de color de letras */
   margin-top: 5px;
 }
 
 .f-menu {
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
 .iconn {
-  font-size: 28px; /* Ajustar el tamaño de los iconos */
-  margin: 0 10px; /* Añadir margen entre los iconos */
+  font-size: 28px;
+  margin: 0 10px;
 }
 
 .iconn:hover {
-  color: #061e50; /* Cambiar el color cuando el cursor pase por encima */
+  color: #4CAF50; /* Cambio de color al pasar el cursor */
 }
 
 .primaryTexto {
   font-weight: bold;
   margin-bottom: 10px;
-  color: #f7f7f7;
+  color: #fff;
 }
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinear al principio */
+  align-items: flex-start; /* Alinear a la izquierda */
+  margin-bottom: 20px;
+  background-color: #34495e; /* Cambio a un fondo más oscuro */
+  padding: 20px; /* Añadir espacio alrededor */
+  border-radius: 10px; /* Añadir bordes redondeados */
+}
+.dividir {
+  display: flex;
+  justify-content: space-between; /* Para dividir en dos partes */
+  align-items: center; /* Centrar verticalmente */
+  margin-bottom: 20px;
+  background-color: #34495e; /* Cambio a un fondo más oscuro */
+  padding: 20px; /* Añadir espacio alrededor */
+  border-radius: 10px; /* Añadir bordes redondeados */
+}
+
+
+.footer-section > div {
+  margin-bottom: 10px;
+}
+
+.footer-section .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-section .description {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-section.open {
+  color: #4CAF50; /* Verde para abierto */
+}
+
+.footer-section.closed {
+  color: #FF5733; /* Rojo para cerrado */
+}
+.footer-section .medium-image {
+  width: 100px; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+.medium-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: fallAnimation 5s ease-in-out infinite; /* Animación de caída */
+}
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(-100px); /* Inicio de la caída (fuera de la pantalla hacia arriba) */
+  }
+  50% {
+    transform: translateY(50px); /* Mitad de la animación (baja un poco) */
+  }
+  100% {
+    transform: translateY(0); /* Fin de la caída (llega a su posición final) */
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .f-container {
@@ -55,14 +123,14 @@
     justify-content: center;
   }
   .iconn {
-    font-size: 20px; /* Ajustar el tamaño de los iconos */
-    margin: 0; /* Añadir margen entre los iconos */
+    font-size: 24px; /* Reducción del tamaño de los iconos para dispositivos móviles */
+    margin: 0;
   }
   .secondaryText {
     font-size: 15px;
     color: #ffffff;
     line-height: 1.5;
-    background-color: #a39f9fd2;
+    background-color: #2c3e50; /* Cambio a un fondo verde oscuro */
     padding: 10px;
     border-radius: 10px;
   }

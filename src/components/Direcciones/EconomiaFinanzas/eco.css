@@ -1,9 +1,18 @@
+.vv-wrapper {
+  width: 100%;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
 .e-container {
     background-image: url('../../../../public/economia.jpg'); 
     background-size: cover; 
     background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -14,7 +23,7 @@
     background-size: cover; 
     background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -25,7 +34,7 @@
     background-size: cover; 
     background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -36,7 +45,7 @@
     background-size: cover; 
     background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -47,7 +56,7 @@
     background-size: cover; 
     background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -58,7 +67,7 @@
     background-size: cover; 
     background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -69,7 +78,7 @@
     background-size: cover; 
     background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;

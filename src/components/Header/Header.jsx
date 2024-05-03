@@ -30,11 +30,9 @@ const Header = () => {
           DIRECCIONES MUNICIPALES
         </Link>
         <Link to="/turismo" onClick={closeMenu}>
-          Turismo
+        CULTURA Y TURISMO
         </Link>
-        <Link to="/cultura" onClick={closeMenu}>
-          Cultura
-        </Link>
+        
         <Link to="/gastronomia" onClick={closeMenu}>
           Gastronomia
         </Link>
