@@ -25,6 +25,15 @@ import Planificacion from "./components/Direcciones/Planificacion/Planificacion"
 import MedioAmbiente from "./components/Direcciones/ProductivoMedioAmbiente/ProductivoMedioAmbiente";
 import DesarrolloHumano from "./components/Direcciones/DesarrolloHumano/Humano";
 import Cusqueno from "./components/culturas/Cusqueno/Cusqueno";
+import Archis from "./components/Restaurantes/Archis/Archis";
+import Aurora from "./components/Restaurantes/Aurora/Aurora";
+import Cantaritos from "./components/Restaurantes/Cantaritos/Cantaritos";
+import Hermanos from "./components/Restaurantes/Hermanos/Hermanos";
+import Huasi from "./components/Restaurantes/Huasi/Huasi";
+import Jotita from "./components/Restaurantes/Jotita/Jotita";
+import Kjaras from "./components/Restaurantes/Kjaras/Kjaras";
+import Poblado from "./components/Restaurantes/Poblado/Poblado";
+import LLajta from "./components/Restaurantes/LLajta/LLajta";
 
 function App() {
   return (
@@ -56,6 +65,15 @@ function App() {
             <Route path="/productivomedioambiente" element={<MedioAmbiente />}/>
             <Route path="/desarrollohumano" element={<DesarrolloHumano />} />
             <Route path="/cusqueno" element={<Cusqueno/>} />
+            <Route path="/archis" element={<Archis />} />
+            <Route path="/aurora" element={<Aurora />} />
+            <Route path="/cantaritos" element={<Cantaritos />} />
+            <Route path="/hermanos" element={<Hermanos />} />
+            <Route path="/pakayhuasi" element={<Huasi />} />
+            <Route path="/jotita" element={<Jotita />} />
+            <Route path="/kjaras" element={<Kjaras />} />
+            <Route path="/poblado" element={<Poblado />} />
+            <Route path="/llajta" element={<LLajta />} />
           </Routes>
         </main>
         <Footer />

@@ -13,7 +13,7 @@ const GetStarted = () => {
     <div id="get-started" className="g-wrapper">
       <div className="paddings innerWidth g-container">
         <div className="flexColCenter inner-container">
-          <span className="primaryText">PLAYA DE GANADO </span>
+          <span className="primaryText">La siguiente feria a realizarce es ***** </span>
           <div className="image-containe">
             <img src="./portada4.jpg" alt="Imagen 1" className="image" />
             <img src="./portada2.jpg" alt="Imagen 2" className="image" />

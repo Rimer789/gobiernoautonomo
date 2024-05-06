@@ -37,7 +37,7 @@ const Header = () => {
           SERVICIO DE RESTAURANTES
         </Link>
         <Link to="/get-started" onClick={closeMenu}>
-          Ferias
+          NOTICIAS
         </Link>
       </nav>
       <div className="menu-icon" onClick={toggleMenu}>

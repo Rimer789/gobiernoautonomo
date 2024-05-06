@@ -9,47 +9,47 @@ const places = [
  
   {
     name: "LOCAL CANTARITOS",
-    image: "./proyectos/cantaritos/cantaritos1.jpg",
+    image: "./gastronomia/cantaritos/3.jpg",
     link: '/cantaritos'
   },
   {
     name: "LOCAL LAS K´JARAS",
-    image: "./proyectos/kjaras/kjaras1.jpg",
+    image: "./gastronomia/kjaras/1.jpg",
     link: '/kjaras'
   },
   {
     name: "LOCAL LOS ARCHIS",
-    image: "./proyectos/archis/archis1.jpg",
+    image: "./gastronomia/archis/3.jpg",
     link: '/archis'
   },
   {
     name: "LOCAL LA LLAJTA",
-    image: "./proyectos/llajta/llajta1.jpg",
+    image: "./gastronomia/llajta/4.jpg",
     link: '/llajta'
   },
   {
     name: "LOCAL EL POBLADO",
-    image: "./proyectos/poblado/poblado1.jpg",
+    image: "./gastronomia/poblado/4.jpg",
     link: '/poblado'
   },
   {
     name: "LOCAL DOÑA AURORA",
-    image: "./proyectos/aurora/aurora1.jpg",
+    image:"./gastronomia/aurora/3.jpg", 
     link: '/aurora'
   },
   {
     name: "LOCAL JOTA JOTITA",
-    image: "./proyectos/jotita/jotita1.jpg",
+    image: "./gastronomia/jotita/1.jpg",
     link: '/jotita'
   },
   {
     name: "LOCAL 3 HERMANOS",
-    image: "./proyectos/hermanos/hermanos1.jpg",
+    image: "./gastronomia/hermanos/3.jpg",
     link: '/hermanos'
   },
   {
     name: "LOCAL PAKAY HUASI",
-    image: "./proyectos/pakayhuasi/pakayhuasi1.jpg",
+    image: "./gastronomia/huasi/2.jpg",
     link: '/pakayhuasi'
   },
   
