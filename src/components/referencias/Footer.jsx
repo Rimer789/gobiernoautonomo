@@ -11,10 +11,9 @@ const Footer = () => {
       try {
         const response = await fetch('http://worldtimeapi.org/api/timezone/America/La_Paz');
         const data = await response.json();
-        const hour = parseInt(data.datetime.slice(11, 13)); // Obtener la hora en formato de 24 horas
+        const hour = parseInt(data.datetime.slice(11, 13)); 
         const minute = parseInt(data.datetime.slice(14, 16));
 
-        // Convertir la hora de UTC a la hora local de Bolivia (GMT-4)
         const localHour = hour - 4;
 
         if (

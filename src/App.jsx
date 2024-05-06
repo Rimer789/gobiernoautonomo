@@ -24,6 +24,7 @@ import ObrasPublicas from "./components/Direcciones/ObrasPublicas/ObrasPublicas"
 import Planificacion from "./components/Direcciones/Planificacion/Planificacion";
 import MedioAmbiente from "./components/Direcciones/ProductivoMedioAmbiente/ProductivoMedioAmbiente";
 import DesarrolloHumano from "./components/Direcciones/DesarrolloHumano/Humano";
+import Cusqueno from "./components/culturas/Cusqueno/Cusqueno";
 
 function App() {
   return (
@@ -52,11 +53,9 @@ function App() {
             <Route path="/urbanismocatastro" element={<UrbanismoCatastro />} />
             <Route path="/obraspuplicas" element={<ObrasPublicas />} />
             <Route path="/planificacion" element={<Planificacion />} />
-            <Route
-              path="/productivomedioambiente"
-              element={<MedioAmbiente />}
-            />
+            <Route path="/productivomedioambiente" element={<MedioAmbiente />}/>
             <Route path="/desarrollohumano" element={<DesarrolloHumano />} />
+            <Route path="/cusqueno" element={<Cusqueno/>} />
           </Routes>
         </main>
         <Footer />

@@ -34,7 +34,7 @@ const Header = () => {
         </Link>
         
         <Link to="/gastronomia" onClick={closeMenu}>
-          Gastronomia
+          SERVICIO DE RESTAURANTES
         </Link>
         <Link to="/get-started" onClick={closeMenu}>
           Ferias

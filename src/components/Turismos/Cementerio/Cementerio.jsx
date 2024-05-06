@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 const Cementerio = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ["./portada1.jpg", "./portada2.jpg", "./portada3.jpg"]; // Agregamos las rutas de las imágenes
+  const images = [
+    "./turismo/cementerio/1.jpg",
+    "./turismo/cementerio/2.jpg",
+    "./turismo/cementerio/3.jpg",
+    "./turismo/cementerio/4.jpg",
+  ]; // Agregamos las rutas de las imágenes
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,14 +29,14 @@ const Cementerio = () => {
             <img src={images[currentImageIndex]} alt="houses" />
           </div>
           <div className="villa-title">
-            <h1>
+            <div className="dess">
               El cementerio general de Punata, un hermoso patrimonio de la perla
               del valle, que aloja la memoria de nuestros antepasados punateños,
               como el Dr. Andrés María Torrico, Dr. Manuel Ascencio Villarroel,
               Dn. Nataniel Daza, Dn. Paulino Crespo, Dr. Rubén Ferrufino, Dr.
               Saúl Orellana, Prof. Atilio Sucre tataranieto del Mariscal Antoni
               José de Sucre y otros.
-            </h1>
+            </div>
           </div>
           <Link to="/turismo">Atrás</Link>
         </div>

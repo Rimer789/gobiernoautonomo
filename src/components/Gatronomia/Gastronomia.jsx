@@ -6,11 +6,53 @@ import "./Gastronomia.css";
 import { sliderSettings } from "../../utils/common";
 
 const places = [
+ 
   {
-    name: "El CUZQUEÑO",
-    image: "./proyectos/cusqueno/cuzqueno1.jpg",
-    link: '/cusqueno'
+    name: "LOCAL CANTARITOS",
+    image: "./proyectos/cantaritos/cantaritos1.jpg",
+    link: '/cantaritos'
   },
+  {
+    name: "LOCAL LAS K´JARAS",
+    image: "./proyectos/kjaras/kjaras1.jpg",
+    link: '/kjaras'
+  },
+  {
+    name: "LOCAL LOS ARCHIS",
+    image: "./proyectos/archis/archis1.jpg",
+    link: '/archis'
+  },
+  {
+    name: "LOCAL LA LLAJTA",
+    image: "./proyectos/llajta/llajta1.jpg",
+    link: '/llajta'
+  },
+  {
+    name: "LOCAL EL POBLADO",
+    image: "./proyectos/poblado/poblado1.jpg",
+    link: '/poblado'
+  },
+  {
+    name: "LOCAL DOÑA AURORA",
+    image: "./proyectos/aurora/aurora1.jpg",
+    link: '/aurora'
+  },
+  {
+    name: "LOCAL JOTA JOTITA",
+    image: "./proyectos/jotita/jotita1.jpg",
+    link: '/jotita'
+  },
+  {
+    name: "LOCAL 3 HERMANOS",
+    image: "./proyectos/hermanos/hermanos1.jpg",
+    link: '/hermanos'
+  },
+  {
+    name: "LOCAL PAKAY HUASI",
+    image: "./proyectos/pakayhuasi/pakayhuasi1.jpg",
+    link: '/pakayhuasi'
+  },
+  
 ];
 
 const Gastronomia = () => {

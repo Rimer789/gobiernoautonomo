@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Chicha = () => {
+const Cusqueno = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "./proyectos/chicha/chicha1.jpg",
-    "./proyectos/chicha/chicha2.jpg",
-    "./proyectos/chicha/chicha3.jpg",
-    "./proyectos/chicha/chicha4.jpg",
+    "./cultura/cusqueno/1.jpeg",
+    "./cultura/cusqueno/2.jpg",
+    "./cultura/cusqueno/3.jpg",
   ];
 
   useEffect(() => {
@@ -30,10 +29,13 @@ const Chicha = () => {
           </div>
           <div className="villa-title">
             <div className="dess">
-              La chicha punateña también conocido como el néctar del valle, es
-              considerada como la mejor chicha de Bolivia, hecha a base maíz
-              amarillo, Maíz Patillo, maíz morado, y otros donde se elabora la
-              chicha amarilla y la chicha Kulli y chicha de chuspillo.
+              El cuzqueño es un delicioso plato típico de Punata, por su
+              originalidad y sabor; el mismo es elaborado con carne de gallina y
+              lengua de vaca; contiene papa, arroz, chuño, su lawa de rosquete
+              sin su crema (jarwilawa), además de relleno de locoto, ensalada de
+              cebolla, tomate, zanahoria y locoto.se llama cusqueño porque la
+              preparación del ají, es preparado a base del ají amarillo en vaina
+              que es traído de cusco Perú.
             </div>
           </div>
           <Link to="/turismo">Atrás</Link>
@@ -43,4 +45,4 @@ const Chicha = () => {
   );
 };
 
-export default Chicha;
+export default Cusqueno;

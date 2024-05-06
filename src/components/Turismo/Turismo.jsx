@@ -8,7 +8,7 @@ import { sliderSettings } from "../../utils/common";
 const places = [
   {
     name: "LA VILLA",
-    image: "./portada4.jpg",
+    image: "./turismo/villa/villa7.jpg",
     link: '/villa'
   },
   {
@@ -18,24 +18,15 @@ const places = [
   },
   {
     name: "HACIENDA DE SIVINGANI",
-    image: "./portada4.jpg",
+    image: "./turismo/sivingani/6.jpg",
     link: '/sivingani'
   },
   {
     name: "CEMENTERIO GENERAL",
-    image: "./portada4.jpg",
+    image: "./turismo/cementerio/1.jpg",
     link: '/cementerio'
   },
-  {
-    name: "Nombre del lugar 4",
-    image: "./portada4.jpg",
-    link: '/lugar4'
-  },
-  {
-    name: "Nombre del lugar 5",
-    image: "./portada4.jpg",
-    link: '/lugar5'
-  },
+
 ];
 
 const cultura = [
@@ -48,6 +39,11 @@ const cultura = [
     name: "LA CHICHA PUNATEÑA",
     image: "./proyectos/chicha/chicha1.jpg",
     link: "/chicha",
+  },
+  {
+    name: "El CUZQUEÑO",
+    image: "./cultura/cusqueno/1.jpeg",
+    link: '/cusqueno'
   },
 ];
 
