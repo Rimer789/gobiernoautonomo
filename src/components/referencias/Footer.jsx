@@ -4,7 +4,7 @@ import "./Footer.css";
 import mediumImage from "./escudopunata.jpg"; // Importa la imagen mediana
 
 const Footer = () => {
-  const [status, setStatus] = useState("Desconocido");
+  const [status, setStatus] = useState("Cargando..."); // Estado inicial de carga
 
   useEffect(() => {
     const obtenerHoraActual = async () => {
@@ -29,17 +29,19 @@ const Footer = () => {
         }
       } catch (error) {
         console.error('Error al obtener la hora:', error);
-        setStatus("Desconocido: Error de conexión");
+        setStatus("Error: Verifica tu conexión a Internet");
       }
     };
 
     obtenerHoraActual();
-  }, []);
+  }, []); // No se incluye status como dependencia para evitar bucles infinitos
 
   useEffect(() => {
-    console.log('Status:', status); // Esta consola mostrará el estado actualizado
-  }, [status]);
-
+    // Imprime solo cuando el estado no sea "Cargando..."
+    if (status !== "Cargando...") {
+      console.log('Status:', status);
+    }
+  }, [status]); // Solo se activa cuando cambia el estado
 
   return (
     <footer className="f-wrapper">
@@ -70,7 +72,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flexColEnd f-right">
-        <span className="footerText">Correo electrónico: ***gmail.com</span>
+        <span className="footerText">Correo electrónico: ***rgmail.com</span>
       </div>
     </footer>
   );
