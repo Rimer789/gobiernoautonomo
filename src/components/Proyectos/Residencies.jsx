@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import data from "../../utils/slider.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
@@ -18,27 +18,30 @@ const Residencies = () => {
 
   return (
     <div id="residencies" className="r-wrapper">
-            <div className="paddings innerWidth g-container">
-      <div className="paddings innerWidth r-container">
-        <div className="flexColStart r-head">
-          <span className="orangeText">PROYECTOS DE LA ALCALDIA</span>
+      <div className="paddings innerWidth g-container">
+        <div className="paddings innerWidth r-container">
+          <div className="flexColStart r-head">
+            <span className="orangeText">PROYECTOS DE LA ALCALDIA</span>
+          </div>
+          <Swiper {...sliderSettings}>
+            <SlideNextButton />
+            {data.map((project, i) => (
+              <SwiperSlide key={i} onClick={() => handleProjectClick(project)}>
+                <div className="flexColStart r-cardp">
+                  <img src={project.image} alt="home" />
+                  <span className="primaryText">{project.name}</span>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          {selectedProject && (
+            <ProjectModal
+              project={selectedProject}
+              onClose={handleCloseModal}
+            />
+          )}
         </div>
-        <Swiper {...sliderSettings}>
-          <SlideNextButton />
-          {data.map((project, i) => (
-            <SwiperSlide key={i} onClick={() => handleProjectClick(project)}>
-              <div className="flexColStart r-cardp">
-                <img src={project.image} alt="home" />
-                <span className="primaryText">{project.name}</span>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        {selectedProject && (
-          <ProjectModal project={selectedProject} onClose={handleCloseModal} />
-        )}
       </div>
-    </div>
     </div>
   );
 };
@@ -59,7 +62,7 @@ const SlideNextButton = () => {
 
 const ProjectModal = ({ project, onClose }) => {
   const handleOverlayClick = (e) => {
-    if (e.target.classList.contains('modal-overlay')) {
+    if (e.target.classList.contains("modal-overlay")) {
       onClose();
     }
   };
@@ -69,7 +72,9 @@ const ProjectModal = ({ project, onClose }) => {
       <div className="modal">
         <div className="modal-content">
           <h2>{project.name}</h2>
-          <span className="close" onClick={onClose}>&times;</span>
+          <span className="close" onClick={onClose}>
+            &times;
+          </span>
           <p>{project.additionalDetails.description}</p>
           <br />
           <div className="images">
@@ -82,9 +87,5 @@ const ProjectModal = ({ project, onClose }) => {
     </div>
   );
 };
-
-
-
-
 
 export default Residencies;
