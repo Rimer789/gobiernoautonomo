@@ -11,6 +11,9 @@ const Footer = () => {
       try {
         const timestamp = new Date().getTime(); // Genera un timestamp único
         const response = await fetch(`http://worldtimeapi.org/api/timezone/America/La_Paz?timestamp=${timestamp}`);
+        if (!response.ok) {
+          throw new Error('Error en la solicitud a la API de hora');
+        }
         const data = await response.json();
         const horaBoliviaLocal = new Date(data.datetime);
         const horaActual = horaBoliviaLocal.getHours();
@@ -26,7 +29,7 @@ const Footer = () => {
         }
       } catch (error) {
         console.error('Error al obtener la hora:', error);
-        setStatus("Desconocido");
+        setStatus("Desconocido: Error de conexión");
       }
     };
 
@@ -67,7 +70,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flexColEnd f-right">
-        <span className="footerText">Correo electrónico: ***rgmail.com</span>
+        <span className="footerText">Correo electrónico: ***gmail.com</span>
       </div>
     </footer>
   );
