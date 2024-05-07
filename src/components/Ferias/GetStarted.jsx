@@ -1,31 +1,72 @@
-// GetStarted.js
-import React from "react";
+/* GetStarted.js */
+import React, { useState, useEffect } from "react";
 import "./GetStarted.css";
-import { FiMapPin } from "react-icons/fi"; // Importa el icono de ubicación
 
 const GetStarted = () => {
-  const handleUbicacionClick = () => {
-    // Lógica para abrir Google Maps aquí
-    window.open("https://www.google.com/maps", "_blank");
-  };
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    const jsonData = require("../../utils/noticias.json");
+    setNews(jsonData);
+  }, []);
 
   return (
-    <div id="get-started" className="g-wrapper">
-      <div className="paddings innerWidth g-container">
-        <div className="flexColCenter inner-container">
-          <span className="primaryText">La siguiente feria a realizarce es ***** </span>
-          <div className="image-containe">
-            <img src="./portada4.jpg" alt="Imagen 1" className="image" />
-            <img src="./portada2.jpg" alt="Imagen 2" className="image" />
-          </div>
-          <div className="ubicacion-container" onClick={handleUbicacionClick}>
-            <FiMapPin className="ubicacion-icono" />
-            <span className="ubicacion-texto">Ubicación</span>
-          </div>
+    <div className="page-background">
+      {news.map((item, index) => (
+        <div key={index} className="news-container">
+          <NewsItem news={item} />
         </div>
+      ))}
+    </div>
+  );
+};
+
+const NewsItem = ({ news }) => {
+  return (
+    <div className="container">
+      <div className="news-item">
+        <h2>{news.title}</h2>
+        <p>{renderDescription(news.description)}</p>
+        <p>{news.date}</p>
+        <ImageSlider imagePaths={news.imagePaths} altText={news.title} />
       </div>
     </div>
   );
 };
 
+const renderDescription = (description) => {
+  return description.split("||").map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+};
+
+const ImageSlider = ({ imagePaths, altText }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagePaths.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [imagePaths.length]);
+
+  return (
+    <div className="image-slider">
+      {imagePaths.map((imagePath, index) => (
+        <img
+          key={index}
+          src={imagePath}
+          alt={`${altText} ${index}`}
+          className={index === currentIndex ? "active" : ""}
+        />
+      ))}
+    </div>
+  );
+};
+
 export default GetStarted;
+

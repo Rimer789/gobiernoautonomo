@@ -134,4 +134,24 @@
     padding: 10px;
     border-radius: 10px;
   }
+  .footer-section .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .footer-section .description {
+    font-size: 10px;
+    color: #fff;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear al principio */
+    align-items: flex-start; /* Alinear a la izquierda */
+    margin-bottom: 20px;
+    background-color: #34495e; /* Cambio a un fondo más oscuro */
+    padding: 20px; /* Añadir espacio alrededor */
+    border-radius: 10px; /* Añadir bordes redondeados */
+  }
+  
 }

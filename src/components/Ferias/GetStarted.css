@@ -1,60 +1,67 @@
-.inner-container{
-    gap: 1.5rem;
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
+.page-background {
+  background-color: #034e07;
+  padding: 20px;
 }
 
-.inner-container .primaryText{
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-}
-.inner-container .secondaryText{
-    color: rgba(255, 255, 255, 0.587);
-}
-.inner-container .button {
-    background: #5a73d7;
-    border: 2px solid white;
-    box-shadow: var(--shadow);
-    border-radius: 10px;
-}
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.news-container {
+  margin-bottom: 20px;
 }
 
-.image {
-  max-width: 550px; /* Tamaño para vista de PC */
+.container {
+  margin-top: 5%;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.news-item p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.image-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.image-slider img {
+  width: 100%;
   height: auto;
-  margin: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.ubicacion-container {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  cursor: pointer;
+.image-slider img {
+  transition: border-color 0.3s ease;
 }
 
-.ubicacion-icono {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
-  color: red;
+.image-slider img.active {
+  border: 2px solid #ffd000;
 }
 
-.ubicacion-texto {
-  color: #000000;
-  font-weight: bold;
-}
 
-/* Media query para vista móvil */
-@media only screen and (max-width: 768px) {
-  .image {
-    max-width: 100%; /* Hacer que las imágenes sean completamente responsivas en vista móvil */
-    margin: 5px; /* Ajustar el margen entre las imágenes */
+@media (max-width: 768px) {
+  .news-item h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333;
+  }
+  .news-item p {
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #666;
   }
 }
