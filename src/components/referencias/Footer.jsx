@@ -9,7 +9,8 @@ const Footer = () => {
   useEffect(() => {
     const obtenerHoraActual = async () => {
       try {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/America/La_Paz');
+        const timestamp = new Date().getTime(); // Genera un timestamp único
+        const response = await fetch(`http://worldtimeapi.org/api/timezone/America/La_Paz?timestamp=${timestamp}`);
         const data = await response.json();
         const horaBoliviaLocal = new Date(data.datetime);
         const horaActual = horaBoliviaLocal.getHours();
@@ -17,7 +18,7 @@ const Footer = () => {
         const horaFinManana = 12;
         const horaInicioTarde = 13;
         const horaFinTarde = 17;
-  
+
         if ((horaActual >= horaInicioManana && horaActual < horaFinManana) || (horaActual >= horaInicioTarde && horaActual < horaFinTarde)) {
           setStatus("Abierto ahora");
         } else {
@@ -28,14 +29,14 @@ const Footer = () => {
         setStatus("Desconocido");
       }
     };
-  
+
     obtenerHoraActual();
   }, []);
-  
+
   useEffect(() => {
     console.log('Status:', status); // Esta consola mostrará el estado actualizado
   }, [status]);
-  
+
 
   return (
     <footer className="f-wrapper">
@@ -66,7 +67,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flexColEnd f-right">
-        <span className="footerText">Correo electrónico: ***gmail.com</span>
+        <span className="footerText">Correo electrónico: ***rgmail.com</span>
       </div>
     </footer>
   );
