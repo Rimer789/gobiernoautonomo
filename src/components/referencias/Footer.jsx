@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
-import mediumImage from "./escudopunata.jpg"; // Importa la imagen mediana
+import mediumImage from "./escudopunata.jpg"; 
 
 const Footer = () => {
-  const [status, setStatus] = useState("Cargando..."); // Estado inicial de carga
+  const [status, setStatus] = useState("Cargando..."); 
 
   useEffect(() => {
     const obtenerHoraActual = async () => {
       try {
-        const timestamp = new Date().getTime(); // Genera un timestamp único
+        const timestamp = new Date().getTime(); 
         const response = await fetch(`http://worldtimeapi.org/api/timezone/America/La_Paz?timestamp=${timestamp}`);
         if (!response.ok) {
           throw new Error('Error en la solicitud a la API de hora');
@@ -34,14 +34,14 @@ const Footer = () => {
     };
 
     obtenerHoraActual();
-  }, []); // No se incluye status como dependencia para evitar bucles infinitos
+  }, []); 
 
   useEffect(() => {
-    // Imprime solo cuando el estado no sea "Cargando..."
+  
     if (status !== "Cargando...") {
       console.log('Status:', status);
     }
-  }, [status]); // Solo se activa cuando cambia el estado
+  }, [status]); 
 
   return (
     <footer className="f-wrapper">
@@ -50,7 +50,6 @@ const Footer = () => {
           <div className="title">Gobierno Autónomo Municipal de Punata</div>
           <div className="description">Oficina central: Calle Sucre entre calle Antofagasta y calle Rafael Urquidi</div>
           <div className="description">Lunes-Viernes, de 8:00 AM a 12:00 PM y de 1:30 PM a 5:30 PM</div>
-          <div style={{ fontSize: "20px", color: status === "Abierto ahora" ? "#4CAF50" : "#FF5733" }}>{status}</div>
         </div>
         <div className="image-container">
           <img src={mediumImage} alt="Imagen Mediana" className="medium-image" />
@@ -71,9 +70,7 @@ const Footer = () => {
           <FaTwitter className="iconn" />
         </a>
       </div>
-      <div className="flexColEnd f-right">
-        <span className="footerText">Correo electrónico: ***rgmail.com</span>
-      </div>
+     
     </footer>
   );
 };
