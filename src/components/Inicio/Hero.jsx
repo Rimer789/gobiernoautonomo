@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaFacebookF, FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import "./Hero.css";
 import background1 from "../../imagenes/portada1.jpg";
@@ -11,7 +10,7 @@ import background7 from "../../imagenes/portada7.jpg";
 
 const Hero = () => {
   const [backgroundImage, setBackgroundImage] = useState(0);
-  const [descriptions, setDescriptions] = useState([
+  const [descriptions] = useState([
     "Ciclo via en la avenida gualberto villarroel",
     "Arco de bienbenida a municipio de punata",
     "Estatuas de madera en el parque",
@@ -48,14 +47,14 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-       <head>
-                <title> ALCALDIA DE PUNATA</title>
-                <meta name="description" content=" Satisfacer las necesidades y aspiraciones de desarrollo de la
+      <head>
+        <title> ALCALDIA DE PUNATA</title>
+        <meta name="description" content=" Satisfacer las necesidades y aspiraciones de desarrollo de la
           población del municipio de Punata, direccionando los servicios
           públicos municipales hacia la mejora de su calidad de vida, en un
           contexto de transparencia, eficacia, eficiencia, calidad y
           oportunidad." />
-            </head>
+      </head>
       <div className="hero-container">
         <div className="hero-title">
           GOBIERNO AUTÓNOMO <br /> MUNICIPAL DE PUNATA
@@ -64,8 +63,8 @@ const Hero = () => {
           {descriptions[backgroundImage]}
         </div>
       </div>
-      
-      
+
+
     </section>
   );
 };

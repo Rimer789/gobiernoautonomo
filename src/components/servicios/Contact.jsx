@@ -1,6 +1,5 @@
 import { React , useState } from "react";
 import data from "../../utils/servicios.json";
-import datos from "../../utils/colegios.json";
 import { sliderSettings } from "../../utils/common";
 import "./Contact.css";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";

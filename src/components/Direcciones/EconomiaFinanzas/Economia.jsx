@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFacebookF, FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./eco.css";
 
