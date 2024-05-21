@@ -15,11 +15,11 @@ const Value = () => {
         <div className="alcalde-container">
           <div className="alcalde-title">Nuestro Alcalde</div>
           <img
-            src="./portada3.jpg"
+            src="./alcalde.JPG"
             alt="Foto del alcalde"
             className="alcalde-img"
           />
-          <div className="alcalde-name">Nombre del Alcalde</div>
+          <div className="alcalde-name">Lic. Jaime Zeballos Vargas</div>
         </div>
         <div className="redes-sociales">
           <a href="link-de-facebook" target="_blank" rel="noopener noreferrer">
