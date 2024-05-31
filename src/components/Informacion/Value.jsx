@@ -5,7 +5,15 @@ import "./Value.css";
 const Value = () => {
   return (
     <div id="value" className="v-wrapper">
+      <head>
+        <title> ALCALDIA DE PUNATA</title>
+        <meta name="description" content="Satisfacer las necesidades y aspiraciones de desarrollo de la población del municipio de Punata." />
+      </head>
       <div className="v-container">
+      <head>
+        <title> ALCALDIA DE PUNATA</title>
+        <meta name="description" content="Satisfacer las necesidades y aspiraciones de desarrollo de la población del municipio de Punata." />
+      </head>
         <div className="text-container">
           <div className="text-large">Gobierno municipal</div>
           <div className="text-small">Alcaldía de Punata</div>
@@ -16,7 +24,7 @@ const Value = () => {
           <div className="alcalde-title">Nuestro Alcalde</div>
           <img
             src="./alcalde.JPG"
-            alt="Foto del alcalde"
+            alt="Foto del alcalde" 
             className="alcalde-img"
           />
           <div className="alcalde-name">Lic. Jaime Zeballos Vargas</div>

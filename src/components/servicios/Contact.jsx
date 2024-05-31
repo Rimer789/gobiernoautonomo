@@ -32,7 +32,15 @@ const Contact = () => {
   };
   return (
     <div id="contact-us" className="v-wrapper">
+      <head>
+        <title> ALCALDIA DE PUNATA</title>
+        <meta name="description" content="Satisfacer las necesidades y aspiraciones de desarrollo de la población del municipio de Punata." />
+      </head>
       <div className="d-container2">
+      <head>
+        <title> ALCALDIA DE PUNATA</title>
+        <meta name="description" content="Satisfacer las necesidades y aspiraciones de desarrollo de la población del municipio de Punata." />
+      </head>
           <div className="flexColStart r-head">
             <span className="orangeText">ORGANIGRAMA 2024 GAM PUNATA </span>
           </div>
