@@ -48,14 +48,14 @@ const Hero = () => {
       }}
     >
       <Helmet>
-        <title>ALCALDIA DE PUNATA</title>
+        <title>GOBIERNO AUTONOMO MUNICIPAL DE PUNATA</title>
         <meta
           name="description"
           content="Satisfacer las necesidades y aspiraciones de desarrollo de la población del municipio de Punata, direccionando los servicios públicos municipales hacia la mejora de su calidad de vida, en un contexto de transparencia, eficacia, eficiencia, calidad y oportunidad."
         />
       </Helmet>
       <head>
-        <title> ALCALDIA DE PUNATA</title>
+        <title> GOBIERNO AUTONOMO MUNICIPAL DE PUNATA</title>
         <meta name="description" content="Satisfacer las necesidades y aspiraciones de desarrollo de la población del municipio de Punata." />
       </head>
       <div className="hero-container">
