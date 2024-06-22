@@ -38,7 +38,7 @@ const Contact = () => {
       </head>
       <div className="d-container2">
       <head>
-        <title> ALCALDIA DE PUNATA</title>
+        <title> GOBIERNO AUTONOMO MUNICIPAL DE PUNATA</title>
         <meta name="description" content="Satisfacer las necesidades y aspiraciones de desarrollo de la población del municipio de Punata." />
       </head>
           <div className="flexColStart r-head">
